@@ -6622,9 +6622,9 @@ fieldset[disabled] .btn-secondary.active {
 }
 .site-header .navbar-header .navbar-brand .site-logo {
   color: #ffb100;
-  font-size: 60px;
   font-family: klavika-bold, "Helvetica Neue", Arial, sans-serif;
   text-transform: uppercase;
+  font-size: 60px;
   display: block;
   line-height: .5em;
 }
@@ -6647,7 +6647,7 @@ fieldset[disabled] .btn-secondary.active {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: 600;
-  letter-spacing: .01em;
+  letter-spacing: .02em;
 }
 .site-header .navbar-collapse .nav .dropdown-menu a {
   color: #007da3;
@@ -6670,11 +6670,7 @@ fieldset[disabled] .btn-secondary.active {
   }
 }
 .site-footer .footer-main .footer-connect .hatch-logo {
-  font-family: klavika-bold, "Helvetica Neue", Arial, sans-serif;
-  text-transform: uppercase;
-  color: #ffb100;
   font-size: 32px;
-  letter-spacing: .01em;
   margin-bottom: 25px;
   display: block;
 }
@@ -6724,5 +6720,10 @@ fieldset[disabled] .btn-secondary.active {
   color: #999999;
   font-size: 13px;
   padding: 20px 0;
+}
+.hatch-logo {
+  color: #ffb100;
+  font-family: klavika-bold, "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=blog.css.map */

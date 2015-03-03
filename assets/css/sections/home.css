@@ -6622,9 +6622,9 @@ fieldset[disabled] .btn-secondary.active {
 }
 .site-header .navbar-header .navbar-brand .site-logo {
   color: #ffb100;
-  font-size: 60px;
   font-family: klavika-bold, "Helvetica Neue", Arial, sans-serif;
   text-transform: uppercase;
+  font-size: 60px;
   display: block;
   line-height: .5em;
 }
@@ -6647,7 +6647,7 @@ fieldset[disabled] .btn-secondary.active {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: 600;
-  letter-spacing: .01em;
+  letter-spacing: .02em;
 }
 .site-header .navbar-collapse .nav .dropdown-menu a {
   color: #007da3;
@@ -6670,11 +6670,7 @@ fieldset[disabled] .btn-secondary.active {
   }
 }
 .site-footer .footer-main .footer-connect .hatch-logo {
-  font-family: klavika-bold, "Helvetica Neue", Arial, sans-serif;
-  text-transform: uppercase;
-  color: #ffb100;
   font-size: 32px;
-  letter-spacing: .01em;
   margin-bottom: 25px;
   display: block;
 }
@@ -6724,6 +6720,69 @@ fieldset[disabled] .btn-secondary.active {
   color: #999999;
   font-size: 13px;
   padding: 20px 0;
+}
+.hatch-logo {
+  color: #ffb100;
+  font-family: klavika-bold, "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+}
+.what-is-hatch {
+  background: #f0f2f2;
+  text-align: center;
+  padding: 60px 0;
+}
+.what-is-hatch .what-is-hatch-wrapper {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .what-is-hatch .what-is-hatch-wrapper {
+    float: left;
+    width: 83.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .what-is-hatch .what-is-hatch-wrapper {
+    margin-left: 8.33333333%;
+  }
+}
+.what-is-hatch h2 {
+  margin: 0 0 25px;
+  font-size: 32px;
+  font-weight: 400;
+}
+.what-is-hatch h2 .hatch-logo {
+  font-size: 38px;
+}
+.what-is-hatch p {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0 0 40px;
+}
+.what-is-hatch .btn-primary {
+  font-weight: 700;
+  padding: 0 30px;
+  height: 36px;
+  line-height: 36px;
+}
+.section-block {
+  margin-bottom: 70px;
+}
+.section-block .section-header .section-title {
+  font-family: klavika-medium, "Helvetica Neue", Arial, sans-serif;
+  font-size: 28px;
+  color: #ffb100;
+  text-transform: uppercase;
+  margin: 0;
+  display: inline-block;
+}
+.section-block .section-header a {
+  margin-left: 20px;
+}
+.section-block .section-header a img {
+  margin-left: 8px;
 }
 .carousel-fade .carousel-inner .item {
   opacity: 0;

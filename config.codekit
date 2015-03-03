@@ -96,160 +96,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/01-img.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 141581,
-		"inputAbbreviatedPath": "\/assets\/img\/01-img.png",
-		"outputAbbreviatedPath": "\/assets\/img\/01-img.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/02-vid.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 140863,
-		"inputAbbreviatedPath": "\/assets\/img\/02-vid.png",
-		"outputAbbreviatedPath": "\/assets\/img\/02-vid.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/03-img.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 751219,
-		"inputAbbreviatedPath": "\/assets\/img\/03-img.png",
-		"outputAbbreviatedPath": "\/assets\/img\/03-img.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/blog-title-bg.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 116325,
-		"inputAbbreviatedPath": "\/assets\/img\/blog-title-bg.png",
-		"outputAbbreviatedPath": "\/assets\/img\/blog-title-bg.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/blog-widget-feature.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 360726,
-		"inputAbbreviatedPath": "\/assets\/img\/blog-widget-feature.png",
-		"outputAbbreviatedPath": "\/assets\/img\/blog-widget-feature.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/feature-illustration-audio.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.09939e+06,
-		"inputAbbreviatedPath": "\/assets\/img\/feature-illustration-audio.png",
-		"outputAbbreviatedPath": "\/assets\/img\/feature-illustration-audio.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/feature-illustration-get.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 993965,
-		"inputAbbreviatedPath": "\/assets\/img\/feature-illustration-get.png",
-		"outputAbbreviatedPath": "\/assets\/img\/feature-illustration-get.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/feature-illustration-give.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 229996,
-		"inputAbbreviatedPath": "\/assets\/img\/feature-illustration-give.png",
-		"outputAbbreviatedPath": "\/assets\/img\/feature-illustration-give.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/feature-illustration-pif.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 421406,
-		"inputAbbreviatedPath": "\/assets\/img\/feature-illustration-pif.png",
-		"outputAbbreviatedPath": "\/assets\/img\/feature-illustration-pif.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/feature-illustration-video.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.14292e+06,
-		"inputAbbreviatedPath": "\/assets\/img\/feature-illustration-video.png",
-		"outputAbbreviatedPath": "\/assets\/img\/feature-illustration-video.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/og-logo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 20793,
-		"inputAbbreviatedPath": "\/assets\/img\/og-logo.png",
-		"outputAbbreviatedPath": "\/assets\/img\/og-logo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/phone-hero-bg.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.01235e+06,
-		"inputAbbreviatedPath": "\/assets\/img\/phone-hero-bg.png",
-		"outputAbbreviatedPath": "\/assets\/img\/phone-hero-bg.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/phone-pif.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 884974,
-		"inputAbbreviatedPath": "\/assets\/img\/phone-pif.png",
-		"outputAbbreviatedPath": "\/assets\/img\/phone-pif.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/photo-colin.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 48723,
-		"inputAbbreviatedPath": "\/assets\/img\/photo-colin.png",
-		"outputAbbreviatedPath": "\/assets\/img\/photo-colin.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/js\/lib\/conditionizr-4.3.0.min.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -1703,6 +1549,26 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/assets\/less\/components\/what-is-hatch.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 1,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/less\/components\/what-is-hatch.less",
+		"outputAbbreviatedPath": "\/assets\/css\/components\/what-is-hatch.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
 	"\/assets\/less\/globals\/buttons.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 1,
@@ -2074,6 +1940,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/includes\/topbar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/what-is-hatch.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/what-is-hatch.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

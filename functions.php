@@ -179,12 +179,6 @@ function html5blank_conditional_styles()
     if ( is_front_page() ) {
         wp_register_style('home', get_template_directory_uri() . '/assets/css/sections/home.css', array(), '1.0', 'all');
         wp_enqueue_style('home'); // Enqueue it!
-    } elseif ( is_page('about-us') ) {
-        wp_register_style('about', get_template_directory_uri() . '/assets/css/sections/about.css', array(), '1.0', 'all');
-        wp_enqueue_style('about'); // Enqueue it!
-    } elseif ( is_page('features') ) {
-        wp_register_style('features', get_template_directory_uri() . '/assets/css/sections/features.css', array(), '1.0', 'all');
-        wp_enqueue_style('features'); // Enqueue it!
     } elseif ( is_home() ) {
         wp_register_style('blog', get_template_directory_uri() . '/assets/css/sections/blog.css', array(), '1.0', 'all');
         wp_enqueue_style('blog'); // Enqueue it!
