@@ -37,7 +37,10 @@
 
 	<body <?php body_class(); ?>>
 
-      <nav class="site-header navbar navbar-inverse navbar-default">
+    <!-- Topbar -->
+    <?php get_template_part( 'includes/topbar' ); ?>
+
+      <nav class="site-header navbar navbar-default">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -48,7 +51,8 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="<?php echo home_url(); ?>">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-header.svg" alt="Logo" class="logo-img">
+              <span class="site-logo">HATCH</span>
+              <span class="site-logo-date">Sep 16-20, 2015</span>
             </a>
           </div>
 

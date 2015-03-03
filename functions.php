@@ -154,9 +154,6 @@ function html5blank_header_scripts()
 
         wp_register_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js', array(), null, false );
         wp_enqueue_script('bootstrap'); // Enqueue it!
-
-        wp_register_script( 'typekit', '//use.typekit.net/tml5cyf.js', array(), null, false );
-        wp_enqueue_script('typekit'); // Enqueue it!
     }
 }
 
@@ -172,8 +169,8 @@ function html5blank_conditional_scripts()
 // Load HTML5 Blank styles
 function html5blank_styles()
 {
-    wp_register_style('style', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
-    wp_enqueue_style('style'); // Enqueue it!
+    wp_register_style('cloud-typography', 'https://cloud.typography.com/7252954/638486/css/fonts.css', array(), null, false);
+    wp_enqueue_style('cloud-typography'); // Enqueue it!
 }
 
 // Load HTML5 Blank conditional styles

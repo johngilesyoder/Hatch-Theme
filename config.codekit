@@ -89,7 +89,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 15472,
+		"initialSize": 13988,
 		"inputAbbreviatedPath": "\/assets\/icons\/touch.png",
 		"outputAbbreviatedPath": "\/assets\/icons\/touch.png",
 		"outputPathIsOutsideProject": 0,
@@ -188,7 +188,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 264327,
+		"initialSize": 421406,
 		"inputAbbreviatedPath": "\/assets\/img\/feature-illustration-pif.png",
 		"outputAbbreviatedPath": "\/assets\/img\/feature-illustration-pif.png",
 		"outputPathIsOutsideProject": 0,
@@ -221,7 +221,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 189179,
+		"initialSize": 1.01235e+06,
 		"inputAbbreviatedPath": "\/assets\/img\/phone-hero-bg.png",
 		"outputAbbreviatedPath": "\/assets\/img\/phone-hero-bg.png",
 		"outputPathIsOutsideProject": 0,
@@ -232,7 +232,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 890121,
+		"initialSize": 884974,
 		"inputAbbreviatedPath": "\/assets\/img\/phone-pif.png",
 		"outputAbbreviatedPath": "\/assets\/img\/phone-pif.png",
 		"outputPathIsOutsideProject": 0,
@@ -1683,16 +1683,16 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/assets\/less\/components\/feature-panels.less": {
+	"\/assets\/less\/components\/topbar.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 1,
 		"disableJavascript": 0,
 		"fileType": 1,
 		"ieCompatibility": 1,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/assets\/less\/components\/feature-panels.less",
-		"outputAbbreviatedPath": "\/assets\/css\/components\/feature-panels.css",
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/less\/components\/topbar.less",
+		"outputAbbreviatedPath": "\/assets\/css\/components\/topbar.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1923,26 +1923,6 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/assets\/less\/sections\/features.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 1,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/less\/sections\/features.less",
-		"outputAbbreviatedPath": "\/assets\/css\/sections\/features.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
 	"\/assets\/less\/sections\/home.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 1,
@@ -2062,24 +2042,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/features-carousel.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/features-carousel.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/features.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/features.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/footer.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -2103,6 +2065,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/header.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/topbar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/topbar.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -2160,15 +2131,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/page-about-us.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/page-features.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/page-features.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
