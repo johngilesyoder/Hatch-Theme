@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="21px" viewBox="0 0 36 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD" sketch:type="MSArtboardGroup" transform="translate(-669.000000, -1599.000000)" stroke="#E6E6E6" fill="#FFFFFF">
+            <g id="TESTIMONIAL" sketch:type="MSLayerGroup" transform="translate(430.000000, 1402.000000)">
+                <path d="M275.05,198 L741.990609,198 C746.425629,198 750,194.415115 750,189.992934 L750,8.00706553 C750,3.58434588 746.414074,0 741.990609,0 L8.00939085,0 C3.57437114,0 0,3.58488535 0,8.00706553 L0,189.992934 C0,194.415654 3.58592643,198 8.00939085,198 L238.95,198 L257,217 L275.05,198 Z" id="Path" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

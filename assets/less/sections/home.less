@@ -1,0 +1,100 @@
+// home.less
+// -----------------------------------------------------------------
+
+// Bootstrap UI Framework
+@import "../bootstrap/bootstrap.less";
+
+// Wordpress Core Styles
+@import "../globals/wordpress-core.less";
+
+// Custom Variables
+@import "../globals/variables.less";
+
+// Z-index scale
+@import "../globals/z-index.less";
+
+// Colors
+@import "../globals/colors.less";
+
+// Buttons
+@import "../globals/buttons.less";
+
+// Site Header
+@import "../globals/site-header.less";
+
+// Site Footer
+@import "../globals/site-footer.less";
+
+// Patterns
+@import "../globals/patterns.less";
+
+// Features Panels
+@import "../components/feature-panels.less";
+
+
+
+// Bootstrap 3.3+ Carousel Fade
+// --------------------------------------
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+// WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+// now override the 3.3 new styles for modern browsers & apply opacity
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel-fade .carousel-inner > .item.next,
+  .carousel-fade .carousel-inner > .item.active.right {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.prev,
+  .carousel-fade .carousel-inner > .item.active.left {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.next.left,
+  .carousel-fade .carousel-inner > .item.prev.right,
+  .carousel-fade .carousel-inner > .item.active {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {}
+
+// Up to tablet
+@media (max-width: 767px) {}
+
+// Up to landscape phone
+@media (max-width: 480px) {}
