@@ -1,19 +1,54 @@
 			<footer class="site-footer">
-	      <div class="container">
-	        <div class="share">
-	          <p>Kindkudos works best with friends – share it now!</p>
-	          <!-- Tweet -->
-	          <div class="share-twitter">
-	            <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/tweet_button.b68aed79dd9ad79554bcd8c9141c94c8.en.html#_=1422412826302&amp;count=none&amp;dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fwww.kindkudos.com%2F&amp;size=m&amp;text=Kindkudos&amp;url=http%3A%2F%2Fwww.kindkudos.com%2F" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-none" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 55px; height: 20px;"></iframe> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-	          </div>
-	          <!-- FB Share -->
-	          <!-- <div class="share-facebook">
-	            <div class="fb-like fb_iframe_widget" data-href="http://www.kindkudos.com" data-layout="button" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=740887432614704&amp;href=http%3A%2F%2Fwww.kindkudos.com%2F&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true"><span style="vertical-align: bottom; width: 93px; height: 20px;"><iframe name="f9db6093" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like Facebook Social Plugin" src="http://www.facebook.com/v2.0/plugins/like.php?action=like&amp;app_id=740887432614704&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FDU1Ia251o0y.js%3Fversion%3D41%23cb%3Df1a9469504%26domain%3Dwww.kindkudos.com%26origin%3Dhttp%253A%252F%252Fwww.kindkudos.com%252Ff9eb13b78%26relation%3Dparent.parent&amp;href=http%3A%2F%2Fwww.kindkudos.com%2F&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true" class="" style="border: none; visibility: visible; width: 93px; height: 20px;"></iframe></span></div>
-	          </div> -->
-	        </div>
-	        <div class="company">
-	          © <?php echo date('Y'); ?> Kindkudos <?php footer_nav(); ?>
-	        </div>
+				<div class="footer-main">
+	      	<div class="container">
+	      		<div class="row">
+		      		<div class="footer-connect">
+		      			<span class="hatch-logo">HATCH</span>
+		      			<div class="footer-social-links">
+		      				<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-footer-twitter.svg"></a>
+		      				<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-footer-facebook.svg"></a>
+		      				<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-footer-instagram.svg"></a>
+		      			</div>
+		      			<a href="mailto:hatchinfo@hatchexperience.org" class="footer-email">hatchinfo@hatchexperience.org</a>
+		      		</div>
+		      		<div class="footer-links">
+		      			<nav class="links-column">
+		      				<h3 class="links-header">About</h3>
+		      				<ul>
+		      					<li><a href="#">What is HATCH?</a></li>
+		      					<li><a href="#">360 Mentorship</a></li>
+		      					<li><a href="#">Creativity</a></li>
+		      					<li><a href="#">The HATCH Network</a></li>
+		      					<li><a href="#">Groundbreakers</a></li>
+		      					<li><a href="#">The Future of HATCH</a></li>
+		      				</ul>
+		      			</nav>
+		      			<nav class="links-column">
+		      				<h3 class="links-header">Conference</h3>
+		      				<ul>
+		      					<li><a href="#">HATCH 12 Info</a></li>
+		      					<li><a href="#">Tesimonials</a></li>
+		      					<li><a href="#">Media</a></li>
+		      					<li><a href="#">Montana</a></li>
+		      					<li><a href="#">Apply For an Invite</a></li>
+		      				</ul>
+		      			</nav>
+		      			<nav class="links-column">
+		      				<h3 class="links-header">Partners</h3>
+		      				<ul>
+		      					<li><a href="#">Our Partners</a></li>
+		      					<li><a href="#">Intel</a></li>
+		      					<li><a href="#">Become a Partner</a></li>
+		      				</ul>
+		      			</nav>
+		      		</div>
+		      	</div>
+	      	</div>
+	      </div>
+        <div class="footer-company">
+        	<div class="container">
+          	© HATCHfest 2004-<?php echo date('Y'); ?>. “HATCH” is a registered trademark. All rights reserved. All logos, except for HATCH logos, are trademarks of their respective companies.
+        	</div>
 	      </div>
 	    </footer>
 
