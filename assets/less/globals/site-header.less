@@ -33,6 +33,15 @@
         &.menu-item-14 a {
           text-transform: none;
         }
+        &.current a {
+          color: #000;
+          span {
+            border-bottom: 3px solid @brand-secondary;
+            &:hover {
+              border-color: @brand-secondary;
+            }
+          }
+        }
         & > a {
           font-weight: 400;
           font-size: 18px;
@@ -43,6 +52,12 @@
           text-transform: uppercase;
           font-weight: 600;
           letter-spacing: .02em;
+          span {
+            padding-bottom: 2px;
+            &:hover {
+              border-bottom: 3px solid @brand-secondary;
+            }
+          }
         }
       }
       .dropdown-menu {
