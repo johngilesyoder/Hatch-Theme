@@ -160,9 +160,17 @@ function html5blank_header_scripts()
 // Load HTML5 Blank conditional scripts
 function html5blank_conditional_scripts()
 {
-    if (is_page('pagenamehere')) {
-        wp_register_script('scriptname', get_template_directory_uri() . '/js/scriptname.js', array('jquery'), '1.0.0'); // Conditional script(s)
-        wp_enqueue_script('scriptname'); // Enqueue it!
+    if ( is_front_page() ) {
+        
+        wp_register_script('isotope', get_template_directory_uri() . '/assets/js/lib/isotope.pkgd.min.js', array(), '2.1.1'); // Masonry
+        wp_enqueue_script('isotope'); // Enqueue it!
+
+        wp_register_script('masonry-horizontal', get_template_directory_uri() . '/assets/js/lib/masonry-horizontal.js', array(), '1.1.0'); // Masonry Horizontal
+        wp_enqueue_script('masonry-horizontal'); // Enqueue it!
+
+        wp_register_script('home', get_template_directory_uri() . '/assets/js/sections/home.js', array(), null, false ); // Home scripts
+        wp_enqueue_script('home'); // Enqueue it!
+    
     }
 }
 

@@ -31,6 +31,88 @@
 // Patterns
 @import "../components/what-is-hatch.less";
 
+.site-header {
+  margin-bottom: 0;
+}
+
+.posts-hero {
+  margin-bottom: 60px;
+  -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+  .clearfix();
+  width: 100%;
+  overflow: auto;
+  padding: 30px;
+  background: @gray-bg;
+  .isotope {
+    height: 492px;
+    .clearfix();
+  }
+  .item {
+    float: left;
+    width: 255px;
+    height: 144px;
+    background: #ddd;
+    margin-right: 30px;
+    display: inline-block;
+    -webkit-transition: all 150ms ease-in-out;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    &:hover {
+      -webkit-transform: scale(1.05);
+    }
+    .article-wrapper {
+      background-size: cover;
+      background-position: 50% 50%;
+      height: 100%;
+      color: #fff;
+      display: block;
+    }
+    .gradient-wrapper {
+      height: 100%;
+      #gradient > .vertical(rgba(0,0,0,.0001), rgba(0,0,0,1), 40%, 100%);
+    }
+    hgroup {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+    }
+    .post-author {
+      font-family: @font-family-archer;
+      font-style: italic;
+      font-size: 16px;
+      margin: 0 0 4px;
+      font-weight: 600;
+    }
+    .post-title {
+      font-size: 24px;
+      font-family: @font-family-tungsten;
+      margin: 0;
+    }
+    &.size2,
+    &.size3 {
+      width: 540px;
+      .gradient-wrapper {
+        #gradient > .vertical(rgba(0,0,0,.0001), rgba(0,0,0,1), 60%, 100%);
+      }
+      hgroup {
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+      }
+      .post-title {
+        font-size: 42px;
+      }
+    }
+    &.size2 {
+      height: 318px;
+    }
+    &.size3 {
+      height: 492px;
+    }
+  }
+}
 
 .section-block {
   margin-bottom: 70px;

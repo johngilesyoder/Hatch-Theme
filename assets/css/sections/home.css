@@ -6832,6 +6832,128 @@ fieldset[disabled] .btn-secondary.active {
   height: 36px;
   line-height: 36px;
 }
+.site-header {
+  margin-bottom: 0;
+}
+.posts-hero {
+  margin-bottom: 60px;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  width: 100%;
+  overflow: auto;
+  padding: 30px;
+  background: #f0f2f2;
+}
+.posts-hero:before,
+.posts-hero:after {
+  content: " ";
+  display: table;
+}
+.posts-hero:after {
+  clear: both;
+}
+.posts-hero:before,
+.posts-hero:after {
+  content: " ";
+  display: table;
+}
+.posts-hero:after {
+  clear: both;
+}
+.posts-hero .isotope {
+  height: 492px;
+}
+.posts-hero .isotope:before,
+.posts-hero .isotope:after {
+  content: " ";
+  display: table;
+}
+.posts-hero .isotope:after {
+  clear: both;
+}
+.posts-hero .isotope:before,
+.posts-hero .isotope:after {
+  content: " ";
+  display: table;
+}
+.posts-hero .isotope:after {
+  clear: both;
+}
+.posts-hero .item {
+  float: left;
+  width: 255px;
+  height: 144px;
+  background: #ddd;
+  margin-right: 30px;
+  display: inline-block;
+  -webkit-transition: all 150ms ease-in-out;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+}
+.posts-hero .item:hover {
+  -webkit-transform: scale(1.05);
+}
+.posts-hero .item .article-wrapper {
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100%;
+  color: #fff;
+  display: block;
+}
+.posts-hero .item .gradient-wrapper {
+  height: 100%;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.0001) 40%, #000000 100%);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.0001) 40%, #000000 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0001) 40%, #000000 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#ff000000', GradientType=0);
+}
+.posts-hero .item hgroup {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+.posts-hero .item .post-author {
+  font-family: 'Archer SSm A', 'Archer SSm B';
+  font-style: italic;
+  font-size: 16px;
+  margin: 0 0 4px;
+  font-weight: 600;
+}
+.posts-hero .item .post-title {
+  font-size: 24px;
+  font-family: 'Tungsten A', 'Tungsten B';
+  margin: 0;
+}
+.posts-hero .item.size2,
+.posts-hero .item.size3 {
+  width: 540px;
+}
+.posts-hero .item.size2 .gradient-wrapper,
+.posts-hero .item.size3 .gradient-wrapper {
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.0001) 60%, #000000 100%);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.0001) 60%, #000000 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0001) 60%, #000000 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#ff000000', GradientType=0);
+}
+.posts-hero .item.size2 hgroup,
+.posts-hero .item.size3 hgroup {
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+.posts-hero .item.size2 .post-title,
+.posts-hero .item.size3 .post-title {
+  font-size: 42px;
+}
+.posts-hero .item.size2 {
+  height: 318px;
+}
+.posts-hero .item.size3 {
+  height: 492px;
+}
 .section-block {
   margin-bottom: 70px;
 }
