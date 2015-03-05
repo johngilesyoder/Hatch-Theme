@@ -6749,7 +6749,7 @@ fieldset[disabled] .btn-secondary.active {
   margin-right: 15px;
 }
 .site-footer .footer-main .footer-connect .footer-social-links a:last-child {
-  margin-right: none;
+  margin-right: 0;
 }
 .site-footer .footer-main .footer-links {
   position: relative;

@@ -1,0 +1,63 @@
+// post.less
+// -----------------------------------------------------------------
+
+.post.type-post {
+  border-bottom: 1px solid @border-color;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  .post-title {
+    margin: 0 0 3px;
+    a {
+      font-family: @font-family-tungsten;
+      font-size: 42px;
+      line-height: 1.125em;
+      text-transform: uppercase;
+      color: #252C33;
+      letter-spacing: .01em;
+    }
+  }
+  .post-meta {
+    font-family: @font-family-archer;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  .post-excerpt {
+    color: #555;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .btn-continue {
+    color: @link-color;
+    border-radius: 36px;
+    line-height: 36px;
+    padding: 0 20px;
+    border-radius: 18px;
+    border-color: #d9d9d9;
+    &:hover {
+      background: @link-color;
+      border-color: @link-color;
+      color: #fff;
+    }
+  }
+}
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {}
+
+// Up to tablet
+@media (max-width: 767px) {}
+
+// Up to landscape phone
+@media (max-width: 480px) {}

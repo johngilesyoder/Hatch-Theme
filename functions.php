@@ -194,8 +194,8 @@ function html5blank_conditional_styles()
         wp_register_style('page', get_template_directory_uri() . '/assets/css/sections/page.css', array(), '1.0', 'all');
         wp_enqueue_style('page'); // Enqueue it!
     } elseif ( is_single() ) {
-        wp_register_style('post', get_template_directory_uri() . '/assets/css/sections/post.css', array(), '1.0', 'all');
-        wp_enqueue_style('post'); // Enqueue it!
+        wp_register_style('blog', get_template_directory_uri() . '/assets/css/sections/blog.css', array(), '1.0', 'all');
+        wp_enqueue_style('blog'); // Enqueue it!
     }
 }
 
@@ -325,11 +325,11 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
 }
 
 // Custom View Article link to Post
-function html5_blank_view_article($more)
-{
-    global $post;
-    return '... <a class="read-more" href="' . get_permalink($post->ID) . '">' . __('Read More', 'html5blank') . '</a>';
-}
+// function html5_blank_view_article($more)
+// {
+//     global $post;
+//     return '... <a class="read-more" href="' . get_permalink($post->ID) . '">' . __('Read More', 'html5blank') . '</a>';
+// }
 
 // Remove Admin bar
 function remove_admin_bar()
