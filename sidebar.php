@@ -5,9 +5,18 @@
 		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-1')) ?>
 	</div>
 
-	<div class="sidebar-widget">
-		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
-	</div>
+  <div class="widget_categories">
+    <h3>Categories</h3>
+    <ul>
+    	<?php $tags = get_tags();
+      if ($tags) {
+      foreach ($tags as $tag) {
+      echo '<li><a href="' . get_tag_link( $tag->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $tag->name ) . '" ' . '>' . $tag->name.'</a></li> ';
+      }
+      }
+      ?>
+    </ul>
+  </div>
 
   <footer class="sidebar-footer">
     <div class="sidebar-footer-logo">
