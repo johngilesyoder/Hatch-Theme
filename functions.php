@@ -188,14 +188,14 @@ function html5blank_conditional_styles()
         wp_register_style('home', get_template_directory_uri() . '/assets/css/sections/home.css', array(), '1.0', 'all');
         wp_enqueue_style('home'); // Enqueue it!
     } elseif ( is_home() ) {
-        wp_register_style('blog', get_template_directory_uri() . '/assets/css/sections/blog.css', array(), '1.0', 'all');
-        wp_enqueue_style('blog'); // Enqueue it!
+        wp_register_style('blog-roll', get_template_directory_uri() . '/assets/css/sections/blog-roll.css', array(), '1.0', 'all');
+        wp_enqueue_style('blog-roll'); // Enqueue it!
     } elseif ( is_page() ) {
         wp_register_style('page', get_template_directory_uri() . '/assets/css/sections/page.css', array(), '1.0', 'all');
         wp_enqueue_style('page'); // Enqueue it!
     } elseif ( is_single() ) {
-        wp_register_style('blog', get_template_directory_uri() . '/assets/css/sections/blog.css', array(), '1.0', 'all');
-        wp_enqueue_style('blog'); // Enqueue it!
+        wp_register_style('single', get_template_directory_uri() . '/assets/css/sections/single.css', array(), '1.0', 'all');
+        wp_enqueue_style('single'); // Enqueue it!
     }
 }
 
