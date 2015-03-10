@@ -14,6 +14,9 @@
 
 					<!-- post title -->
 					<h1 class="post-title">
+						<?php if ( in_category( 'profiles' ) ) : ?>
+							Profile &nbsp;//&nbsp; 
+						<?php endif; ?>
 						<?php the_title(); ?>
 					</h1>
 					<div class="post-meta">
@@ -37,7 +40,21 @@
 					<?php endif; ?>
 
 					<div class="post-content">
+						<!-- Profile intro statement -->
+						<?php if ( get_post_meta( get_the_ID(), 'wpcf-profile-introduction-statement', true ) ) : ?>
+					    <div class="profile-intro-statement">
+					    	<?php echo get_post_meta( get_the_ID(), 'wpcf-profile-introduction-statement', true ); ?>
+					    </div>
+					  <?php endif; ?>
+
 						<?php the_content(); // Dynamic Content ?>
+
+						<!-- Profile intro statement -->
+						<?php if ( get_post_meta( get_the_ID(), 'wpcf-profile-closing-statement', true ) ) : ?>
+					    <div class="profile-closing-statement">
+					    	<?php echo get_post_meta( get_the_ID(), 'wpcf-profile-closing-statement', true ); ?>
+					    </div>
+					  <?php endif; ?>
 					</div>
 
 					<?php comments_template(); ?>

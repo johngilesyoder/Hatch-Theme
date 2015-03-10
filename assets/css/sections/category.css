@@ -7093,30 +7093,30 @@ body {
     padding-top: 27px;
   }
 }
-.blog-roll-wrapper main {
-  padding-top: 28px;
-}
-.post.type-post {
-  border: 0;
-  padding-bottom: 0;
-}
-.view-all-posts {
-  margin-bottom: 25px;
-}
-.profile-intro-statement {
-  margin-bottom: 30px;
-  padding-bottom: 30px;
+.category-title {
   border-bottom: 1px solid #e6e6e6;
-  font-size: 13px;
-  line-height: 20px;
-  font-style: italic;
+  margin-bottom: 30px;
+  padding: 10px 15px;
+  width: auto;
+  padding-left: 1015px;
+  margin-left: -1000px;
+  background: #fafafa;
 }
-.profile-closing-statement {
-  margin-top: 30px;
-  padding-top: 30px;
-  border-top: 1px solid #e6e6e6;
-  font-size: 13px;
-  line-height: 20px;
-  font-style: italic;
+.category-title strong {
+  color: #F7862F;
+  font-family: 'Tungsten A', 'Tungsten B';
+  font-size: 30px;
+  font-style: normal;
+  margin-right: 15px;
+  letter-spacing: .02em;
 }
-/*# sourceMappingURL=single.css.map */
+.category-title p {
+  font-style: italic;
+  color: #555;
+  margin: 0;
+  display: inline-block;
+}
+.blog-roll-wrapper main {
+  padding-top: 110px;
+}
+/*# sourceMappingURL=category.css.map */

@@ -10,10 +10,26 @@
     width: 47px;
     height: 47px;
     border-radius: 50%;
-    background: #F2FBFF;
-    border: 2px solid #7AB1CC;
     display: block;
     text-align: center;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    .format-icon {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      display: inline-block;
+    }
+  }
+  &.category-becauseofhatch .post-format {
+    background: #FFF8F2;
+    border: 2px solid #F2AE79;
+    .format-icon {
+      background-image: url('../../img/post-format-because-of-hatch.svg');
+      height: 30px;
+      width: 23px;
+    }
   }
 }
 .post.type-post {
@@ -29,6 +45,11 @@
     letter-spacing: .01em;
     a {
       color: #252C33;
+    }
+    .icon-external-link {
+      margin-left: 10px;
+      top: 2px;
+      position: relative;
     }
   }
   .post-meta {

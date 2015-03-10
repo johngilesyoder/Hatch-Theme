@@ -6,7 +6,10 @@
 
       <?php get_template_part('loop'); ?>
 
-      <?php get_template_part('pagination'); ?>
+      <div class="blog-pagination">
+        <div class="nav-previous"><?php next_posts_link( '&larr;&nbsp; Older posts' ); ?></div>
+        <div class="nav-next"><?php previous_posts_link( 'Newer posts &nbsp;&rarr;' ); ?></div>
+      </div>
 
     </main>
   </div>

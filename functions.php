@@ -6,13 +6,13 @@
  */
 
 /*------------------------------------*\
-	External Modules/Files
+  External Modules/Files
 \*------------------------------------*/
 
 // Load any external files you have here
 
 /*------------------------------------*\
-	Theme Support
+  Theme Support
 \*------------------------------------*/
 
 if (!isset($content_width))
@@ -34,21 +34,21 @@ if (function_exists('add_theme_support'))
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
     /*add_theme_support('custom-background', array(
-	'default-color' => 'FFF',
-	'default-image' => get_template_directory_uri() . '/img/bg.jpg'
+  'default-color' => 'FFF',
+  'default-image' => get_template_directory_uri() . '/img/bg.jpg'
     ));*/
 
     // Add Support for Custom Header - Uncomment below if you're going to use
     /*add_theme_support('custom-header', array(
-	'default-image'			=> get_template_directory_uri() . '/img/headers/default.jpg',
-	'header-text'			=> false,
-	'default-text-color'		=> '000',
-	'width'				=> 1000,
-	'height'			=> 198,
-	'random-default'		=> false,
-	'wp-head-callback'		=> $wphead_cb,
-	'admin-head-callback'		=> $adminhead_cb,
-	'admin-preview-callback'	=> $adminpreview_cb
+  'default-image'     => get_template_directory_uri() . '/img/headers/default.jpg',
+  'header-text'     => false,
+  'default-text-color'    => '000',
+  'width'       => 1000,
+  'height'      => 198,
+  'random-default'    => false,
+  'wp-head-callback'    => $wphead_cb,
+  'admin-head-callback'   => $adminhead_cb,
+  'admin-preview-callback'  => $adminpreview_cb
     ));*/
 
     // Enables post and comment RSS feed links to head
@@ -59,7 +59,7 @@ if (function_exists('add_theme_support'))
 }
 
 /*------------------------------------*\
-	Functions
+  Functions
 \*------------------------------------*/
 
 // Register Custom Navigation Walker
@@ -68,25 +68,25 @@ require_once('wp_bootstrap_navwalker.php');
 // HTML5 Blank navigation
 function html5blank_nav()
 {
-	wp_nav_menu(
-	array(
-		'theme_location'  => 'sidebar-menu',
-		'menu'            => '',
-		'container'       => 'div',
-		'container_class' => 'menu-{menu slug}-container',
-		'container_id'    => '',
-		'menu_class'      => 'menu',
-		'menu_id'         => '',
-		'echo'            => true,
-		'fallback_cb'     => 'wp_page_menu',
-		'before'          => '',
-		'after'           => '',
-		'link_before'     => '',
-		'link_after'      => '',
-		'items_wrap'      => '<ul>%3$s</ul>',
-		'depth'           => ''
-		)
-	);
+  wp_nav_menu(
+  array(
+    'theme_location'  => 'sidebar-menu',
+    'menu'            => '',
+    'container'       => 'div',
+    'container_class' => 'menu-{menu slug}-container',
+    'container_id'    => '',
+    'menu_class'      => 'menu',
+    'menu_id'         => '',
+    'echo'            => true,
+    'fallback_cb'     => 'wp_page_menu',
+    'before'          => '',
+    'after'           => '',
+    'link_before'     => '',
+    'link_after'      => '',
+    'items_wrap'      => '<ul>%3$s</ul>',
+    'depth'           => ''
+    )
+  );
 }
 
 // Bootstrap primary navigation
@@ -143,7 +143,7 @@ function html5blank_header_scripts()
 {
     if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
 
-    	wp_register_script('conditionizr', get_template_directory_uri() . '/assets/js/lib/conditionizr-4.3.0.min.js', array(), '4.3.0'); // Conditionizr
+      wp_register_script('conditionizr', get_template_directory_uri() . '/assets/js/lib/conditionizr-4.3.0.min.js', array(), '4.3.0'); // Conditionizr
         wp_enqueue_script('conditionizr'); // Enqueue it!
 
         wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
@@ -196,6 +196,9 @@ function html5blank_conditional_styles()
     } elseif ( is_single() ) {
         wp_register_style('single', get_template_directory_uri() . '/assets/css/sections/single.css', array(), '1.0', 'all');
         wp_enqueue_style('single'); // Enqueue it!
+    } elseif ( is_category() ) {
+        wp_register_style('category', get_template_directory_uri() . '/assets/css/sections/category.css', array(), '1.0', 'all');
+        wp_enqueue_style('category'); // Enqueue it!
     }
 }
 
@@ -371,49 +374,49 @@ function enable_threaded_comments()
 // Custom Comments Callback
 function html5blankcomments($comment, $args, $depth)
 {
-	$GLOBALS['comment'] = $comment;
-	extract($args, EXTR_SKIP);
+  $GLOBALS['comment'] = $comment;
+  extract($args, EXTR_SKIP);
 
-	if ( 'div' == $args['style'] ) {
-		$tag = 'div';
-		$add_below = 'comment';
-	} else {
-		$tag = 'li';
-		$add_below = 'div-comment';
-	}
+  if ( 'div' == $args['style'] ) {
+    $tag = 'div';
+    $add_below = 'comment';
+  } else {
+    $tag = 'li';
+    $add_below = 'div-comment';
+  }
 ?>
     <!-- heads up: starting < for the html tag (li or div) in the next line: -->
     <<?php echo $tag ?> <?php comment_class(empty( $args['has_children'] ) ? '' : 'parent') ?> id="comment-<?php comment_ID() ?>">
-	<?php if ( 'div' != $args['style'] ) : ?>
-	<div id="div-comment-<?php comment_ID() ?>" class="comment-body">
-	<?php endif; ?>
-	<div class="comment-author vcard">
-	<?php if ($args['avatar_size'] != 0) echo get_avatar( $comment, $args['180'] ); ?>
-	<?php printf(__('<cite class="fn">%s</cite> <span class="says">says:</span>'), get_comment_author_link()) ?>
-	</div>
+  <?php if ( 'div' != $args['style'] ) : ?>
+  <div id="div-comment-<?php comment_ID() ?>" class="comment-body">
+  <?php endif; ?>
+  <div class="comment-author vcard">
+  <?php if ($args['avatar_size'] != 0) echo get_avatar( $comment, $args['180'] ); ?>
+  <?php printf(__('<cite class="fn">%s</cite> <span class="says">says:</span>'), get_comment_author_link()) ?>
+  </div>
 <?php if ($comment->comment_approved == '0') : ?>
-	<em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.') ?></em>
-	<br />
+  <em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.') ?></em>
+  <br />
 <?php endif; ?>
 
-	<div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>">
-		<?php
-			printf( __('%1$s at %2$s'), get_comment_date(),  get_comment_time()) ?></a><?php edit_comment_link(__('(Edit)'),'  ','' );
-		?>
-	</div>
+  <div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>">
+    <?php
+      printf( __('%1$s at %2$s'), get_comment_date(),  get_comment_time()) ?></a><?php edit_comment_link(__('(Edit)'),'  ','' );
+    ?>
+  </div>
 
-	<?php comment_text() ?>
+  <?php comment_text() ?>
 
-	<div class="reply">
-	<?php comment_reply_link(array_merge( $args, array('add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
-	</div>
-	<?php if ( 'div' != $args['style'] ) : ?>
-	</div>
-	<?php endif; ?>
+  <div class="reply">
+  <?php comment_reply_link(array_merge( $args, array('add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+  </div>
+  <?php if ( 'div' != $args['style'] ) : ?>
+  </div>
+  <?php endif; ?>
 <?php }
 
 /*------------------------------------*\
-	Actions + Filters + ShortCodes
+  Actions + Filters + ShortCodes
 \*------------------------------------*/
 
 // Add Actions
@@ -470,7 +473,7 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 // [html5_shortcode_demo] [html5_shortcode_demo_2] Here's the page title! [/html5_shortcode_demo_2] [/html5_shortcode_demo]
 
 /*------------------------------------*\
-	Custom Post Types
+  Custom Post Types
 \*------------------------------------*/
 
 // Create 1 Custom Post type for a Demo, called HTML5-Blank
@@ -512,7 +515,7 @@ function create_post_type_html5()
 }
 
 /*------------------------------------*\
-	ShortCode Functions
+  ShortCode Functions
 \*------------------------------------*/
 
 // Shortcode Demo with Nested Capability
@@ -529,5 +532,157 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 
 // Add post format support
 add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'status', 'video', 'audio' ) );
+
+
+$metaboxes = array(
+    'link_url' => array(
+        'title' => __('link information', 'twentyeleven'),
+        'applicableto' => 'post',
+        'location' => 'normal',
+        'display_condition' => 'post-format-link',
+        'priority' => 'low',
+        'fields' => array(
+            'l_url' => array(
+                'title' => __('link url:', 'twentyeleven'),
+                'type' => 'text',
+                'description' => '',
+                'size' => 60
+            )
+        )
+    )
+);
+
+
+
+add_action( 'admin_init', 'add_post_format_metabox' );
+ 
+function add_post_format_metabox() {
+    global $metaboxes;
+ 
+    if ( ! empty( $metaboxes ) ) {
+        foreach ( $metaboxes as $id => $metabox ) {
+            add_meta_box( $id, $metabox['title'], 'show_metaboxes', $metabox['applicableto'], $metabox['location'], $metabox['priority'], $id );
+        }
+    }
+}
+
+
+
+function show_metaboxes( $post, $args ) {
+    global $metaboxes;
+ 
+    $custom = get_post_custom( $post->ID );
+    $fields = $tabs = $metaboxes[$args['id']]['fields'];
+ 
+    /** Nonce **/
+    $output = '<input type="hidden" name="post_format_meta_box_nonce" value="' . wp_create_nonce( basename( __FILE__ ) ) . '" />';
+ 
+    if ( sizeof( $fields ) ) {
+        foreach ( $fields as $id => $field ) {
+            switch ( $field['type'] ) {
+                default:
+                case "text":
+ 
+                    $output .= '<label for="' . $id . '">' . $field['title'] . '</label><input id="' . $id . '" type="text" name="' . $id . '" value="' . $custom[$id][0] . '" size="' . $field['size'] . '" />';
+ 
+                    break;
+            }
+        }
+    }
+ 
+    echo $output;
+}
+
+
+
+add_action( 'save_post', 'save_metaboxes' );
+ 
+function save_metaboxes( $post_id ) {
+    global $metaboxes;
+ 
+    // verify nonce
+    if ( ! wp_verify_nonce( $_POST['post_format_meta_box_nonce'], basename( __FILE__ ) ) )
+        return $post_id;
+ 
+    // check autosave
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
+        return $post_id;
+ 
+    // check permissions
+    if ( 'page' == $_POST['post_type'] ) {
+        if ( ! current_user_can( 'edit_page', $post_id ) )
+            return $post_id;
+    } elseif ( ! current_user_can( 'edit_post', $post_id ) ) {
+        return $post_id;
+    }
+ 
+    $post_type = get_post_type();
+ 
+    // loop through fields and save the data
+    foreach ( $metaboxes as $id => $metabox ) {
+        // check if metabox is applicable for current post type
+        if ( $metabox['applicableto'] == $post_type ) {
+            $fields = $metaboxes[$id]['fields'];
+ 
+            foreach ( $fields as $id => $field ) {
+                $old = get_post_meta( $post_id, $id, true );
+                $new = $_POST[$id];
+ 
+                if ( $new && $new != $old ) {
+                    update_post_meta( $post_id, $id, $new );
+                }
+                elseif ( '' == $new && $old || ! isset( $_POST[$id] ) ) {
+                    delete_post_meta( $post_id, $id, $old );
+                }
+            }
+        }
+    }
+}
+
+add_action( 'admin_print_scripts', 'display_metaboxes', 1000 );
+
+function display_metaboxes() {
+    global $metaboxes;
+    if ( get_post_type() == "post" ) :
+        ?>
+        <script type="text/javascript">// <![CDATA[
+            $ = jQuery;
+ 
+            <?php
+            $formats = $ids = array();
+            foreach ( $metaboxes as $id => $metabox ) {
+                array_push( $formats, "'" . $metabox['display_condition'] . "': '" . $id . "'" );
+                array_push( $ids, "#" . $id );
+            }
+            ?>
+ 
+            var formats = { <?php echo implode( ',', $formats );?> };
+            var ids = "<?php echo implode( ',', $ids ); ?>";
+
+            function displayMetaboxes() {
+                // Hide all post format metaboxes
+                $(ids).hide();
+                // Get current post format
+                var selectedElt = $("input[name='post_format']:checked").attr("id");
+ 
+                // If exists, fade in current post format metabox
+                if ( formats[selectedElt] )
+                    $("#" + formats[selectedElt]).fadeIn();
+            }
+ 
+            $(function() {
+                // Show/hide metaboxes on page load
+                displayMetaboxes();
+ 
+                // Show/hide metaboxes on change event
+                $("input[name='post_format']").change(function() {
+                    displayMetaboxes();
+                });
+            });
+ 
+        // ]]></script>
+        <?php
+    endif;
+}
 
 ?>

@@ -8,6 +8,17 @@
   position: absolute;
   top: 0;
   bottom: 0;
+  width: 100%;
+  .widget_twitter {
+    width: 100%;
+    padding: 0 15px;
+    h3 {
+      font-family: @font-family-tungsten;
+      font-size: 21px;
+      letter-spacing: .02em;
+      margin: 0 0 20px;
+    }
+  }
   .widget_text {
     text-align: center;
     border-bottom: 1px solid @border-color;
@@ -134,3 +145,40 @@
     }
   }
 }
+
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-height: 700px) {
+
+  .sidebar-becauseofhatch {
+    .blog-sidebar {
+      .widget_text,
+      .widget_search,
+      .widget_categories {
+        display: none;
+      }
+      .widget_twitter {
+        padding-top: 27px;
+      }
+    }
+  }
+
+}
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {}
+
+// Up to tablet
+@media (max-width: 767px) {}
+
+// Up to landscape phone
+@media (max-width: 480px) {}

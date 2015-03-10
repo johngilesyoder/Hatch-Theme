@@ -1,4 +1,4 @@
-// single.less
+// blog-roll.less
 // -----------------------------------------------------------------
 
 // Bootstrap UI Framework
@@ -37,36 +37,34 @@
 // Sidebar
 @import "../components/sidebar.less";
 
-.blog-roll-wrapper {
-  main {
-    padding-top: 28px;
+.category-title {
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 30px;
+  padding: 10px 15px;
+  width: auto;
+  padding-left: 1015px;
+  margin-left: -1000px;
+  background: #fafafa;
+  strong {
+    color: #F7862F;
+    font-family: @font-family-tungsten;
+    font-size: 30px;
+    font-style: normal;
+    margin-right: 15px;
+    letter-spacing: .02em;
+  }
+  p {
+    font-style: italic;
+    color: #555;
+    margin: 0;
+    display: inline-block;
   }
 }
-.post.type-post {
-  border: 0;
-  padding-bottom: 0;
-}
 
-.view-all-posts {
-  margin-bottom: 25px;
-}
-
-.profile-intro-statement {
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid @border-color;
-  font-size: 13px;
-  line-height: 20px;
-  font-style: italic;
-}
-
-.profile-closing-statement {
-  margin-top: 30px;
-  padding-top: 30px;
-  border-top: 1px solid @border-color;
-  font-size: 13px;
-  line-height: 20px;
-  font-style: italic;
+.blog-roll-wrapper {
+  main {
+    padding-top: 110px;
+  }
 }
 
 // Media Queries
