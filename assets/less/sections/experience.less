@@ -29,12 +29,399 @@
 @import "../globals/patterns.less";
 
 // Patterns
-@import "../components/what-is-hatch.less";
+@import "../components/partners-block.less";
 
 .site-header {
-  margin-bottom: 0;
+  margin-bottom: -126px;
+  width: 100%;
+  border-top: 0;
+  background: transparent;
+  border-bottom-color: transparent;
+  z-index: 10;
+  .navbar-header {
+    .navbar-brand {
+      .site-logo-date {
+        color: #fff;
+      }
+    }
+  }
+  .navbar-collapse {
+    .nav {
+      & > li {
+        &.current a {
+          color: #fff;
+        }
+        & > a {
+          color: #fff;
+        }
+      }
+      .dropdown-menu {
+        a {
+          color: @brand-primary;
+        }
+      }
+    }
+  }
 }
 
+.section-block {
+  padding: 75px 0;
+  .section-title {
+    font-size: 60px;
+    font-family: @font-family-klavika-medium;
+    color: #fff;
+    text-align: center;
+    margin: 0 0 55px;
+  }
+  .section-aside {
+    .section-aside-title {
+      .make-md-column(3);
+      h3 {
+        font-family: @font-family-klavika-medium;
+        color: @brand-secondary;
+        font-size: 60px;
+        margin: 0;
+        line-height: .9em;
+      }
+    }
+    .section-aside-content {
+      .make-md-column(9);
+      .section-aside-content-wrapper {
+        padding-left: 20px;
+        border-left: 6px solid @brand-secondary;
+      }
+    }
+  }
+}
+
+.quote-block {
+  .quote-statement {
+    font-family: @font-family-archer;
+    font-style: italic;
+    line-height: 1.6em;
+  }
+  cite {
+    font-style: normal;
+    font-weight: 300;
+    .cite-person {
+      color: @brand-secondary;
+    }
+    .cite-organization {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.conference-apply {
+  .hero-title {
+    margin-bottom: 40px;
+    text-shadow: 0 1px 20px #000;
+    display: inline-block;
+    padding: 20px 15px 30px;
+  }
+  .hero-logo {
+    font-size: 150px;
+    margin: 0 0 18px;
+    line-height: 1em;
+    margin-bottom: -30px;
+    sup {
+      color: #fff;
+      font-size: 75px;
+      position: relative;
+      top: -50px;
+      left: 3px;
+    }
+  }
+  .hero-date-location {
+    display: block;
+    font-family: @font-family-archer;
+    font-style: italic;
+    font-size: 24px;
+  }
+  .btn-apply {
+    border-radius: 11px;
+    font-size: 21px;
+    font-weight: 300;
+    color: #fff;
+    height: 55px;
+    line-height: 55px;
+    padding: 0 25px;
+    #gradient > .vertical(#0CC4ED, #006699, 0%, 100%);
+    box-shadow: 0 2px 35px 23px rgba(0,0,0,.75);
+    border: 0;
+    strong {
+      font-weight: 600;
+    }
+    &:hover {
+      #gradient > .vertical(#0BB9E0, #005E8C, 0%, 100%);
+    }
+  }
+}
+
+.section-hero {
+  color: #fff;
+  height: 815px;
+  background-color: #111;
+  background-image: url('../../img/experience/section-bg-hero.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  border-bottom: 16px solid #000;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  .hero-content-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+  .conference-apply {
+    .hero-title {
+      background-image: url('../../img/experience/hero-shadow.png');
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+  }
+}
+
+.section-what {
+  color: #fff;
+  background-color: #111;
+  background-image: url('../../img/experience/section-bg-what.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  .what-video {
+    text-align: center;
+    margin-bottom: 60px;
+    .what-video-wrapper {
+      background: @brand-secondary;
+      padding: 10px;
+      border-radius: 8px;
+      display: inline-block;
+    }
+    .clearfix();
+    iframe {
+      float: left;
+    }
+  }
+  .what-summary {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 300;
+    margin-bottom: 60px;
+    a {
+      color: #00B0E6;
+    }
+  }
+  .hard-to-explain {
+    .quote-block {
+      .quote-statement {
+        font-size: 18px;
+      }
+      cite {
+        font-size: 18px;
+        .cite-person {
+          font-size: 24px;
+        }
+        .cite-organization {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.section-why {
+  color: #fff;
+  background-color: #111;
+  background-image: url('../../img/experience/section-bg-why.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  .why-blocks {
+    margin-bottom: 80px;
+    .clearfix();
+  }
+  .why-block {
+    display: block;
+    float: left;
+    background: rgba(0,0,0,.7);
+    width: 48.50877193%;
+    padding: 15px;
+    &:first-child {
+      margin-right: 1.49122807%;
+    }
+    h3 {
+      font-size: 30px;
+      font-family: @font-family-klavika-medium;
+      color: @brand-secondary;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0;
+      font-weight: 300;
+    }
+    a {
+      color: #00B0E6;
+    }
+  }
+  .because-of-hatch {
+    text-align: center;
+    .because-of-hatch-title {
+      color: #fff;
+      background: @brand-secondary;
+      font-size: 50px;
+      font-family: @font-family-klavika-medium;
+      display: inline-block;
+      border-radius: 8px;
+      padding: 10px 40px 5px;
+      margin: 0 0 40px;
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        left: 60px;
+        display: block;
+        width: 31px;
+        height: 20px;
+        background-image: url('../../img/experience/caret-because-of-hatch.svg');
+        background-size: cover;
+      }
+    }
+    .item p {
+      font-size: 24px;
+      margin: 0;
+    }
+  }
+}
+
+.section-who {
+  color: #fff;
+  background-color: #111;
+  background-image: url('../../img/experience/section-bg-who.png');
+  background-size: 128px;
+  .section-title {
+    margin-bottom: 15px;
+  }
+  .who-summary {
+    margin: 0 0 75px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6em;
+  }
+  .testimonial {
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .testimonial-photo {
+      width: 132px;
+      border-radius: 50%;
+      border: 6px solid @brand-secondary;
+      float: left;
+    }
+    .quote-block {
+      padding-left: 160px;
+      padding-top: 15px;
+      .quote-statement {
+        font-size: 16px;
+      }
+      cite {
+        font-size: 18px;
+        .cite-person {
+          font-size: 24px;
+        }
+        .cite-organization {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.section-where {
+  color: #fff;
+  background-color: #111;
+  background-image: url('../../img/experience/section-bg-where.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  .container {
+    position: relative;
+  }
+  .where-summary {
+    font-size: 18px;
+    margin-bottom: 60px;
+    width: 870px;
+    strong {
+      color: @brand-secondary;
+    }
+  }
+  .off-the-grid {
+    .section-aside-title {
+      width: 230px;
+    }
+    .section-aside-content {
+      width: 610px;
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+  .bubble {
+    border-radius: 50%;
+    border: 6px solid @brand-secondary;
+    position: absolute;
+    top: 0;
+  }
+  .bubble-1 {
+    width: 270px;
+    height: 270px;
+    top: 125px;
+    right: -25px;
+  }
+  .bubble-2 {
+    width: 243px;
+    height: 243px;
+    top: 330px;
+    right: 40px;
+  }
+}
+
+.section-bottom {
+  padding-top: 100px;
+  color: #fff;
+  background-color: #111;
+  background-image: url('../../img/experience/section-bg-who.png');
+  background-size: 128px;
+  .conference-apply {
+    text-align: center;
+    margin-bottom: 100px;
+    .btn-apply {
+      box-shadow: 0 2px 35px 23px rgba(0,0,0,.06);
+    }
+  }
+  .section-partners {
+    padding: 0;
+    .section-header {
+      margin-bottom: 30px;
+      .section-title {
+        font-family: @font-family-klavika-medium;
+        font-size: 28px;
+        color: @brand-secondary;
+        text-transform: uppercase;
+        margin: 0;
+        display: inline-block;
+      }
+      a {
+        margin-left: 20px;
+        color: #00B0E6;
+        img {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
 
 
 

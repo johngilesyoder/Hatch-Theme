@@ -31,6 +31,9 @@
 // Patterns
 @import "../components/what-is-hatch.less";
 
+// Patterns
+@import "../components/partners-block.less";
+
 .site-header {
   margin-bottom: 0;
 }
@@ -277,49 +280,6 @@
     .hatching-date,
     .hatching-location {
       display: block;
-    }
-  }
-}
-
-.section-partners {
-  .innovation-partner {
-    .make-md-column(3);
-    .innovation-partner-wrapper {
-      background: #F0F8FF;
-      text-align: center;
-      height: 254px;
-      position: relative;
-      .vertical-center-parent();
-      img {
-        width: 184px;
-        .vertical-center();
-      }
-      span {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        color: #0860A8;
-      }
-    }
-  }
-  .partners-column {
-    .make-md-column(3);
-    .partners-column-title {
-      font-size: 14px;
-      margin: 3px 0 15px;
-      font-weight: 400;
-    }
-    .partner-logos {
-      margin-bottom: -30px;
-      .clearfix();
-    }
-    .partner-logo {
-      margin-bottom: 30px;
-      float: left;
-      margin-right: 30px;
-      &:nth-child(even) {
-        margin-right: 0;
-      }
     }
   }
 }
