@@ -6635,7 +6635,7 @@ fieldset[disabled] .btn-secondary.active {
   font-size: 14px;
   color: #BBBBBB;
 }
-.site-header .navbar-collapse .nav > li.menu-item-14 a {
+.site-header .navbar-collapse .nav > li:nth-child(6) a {
   text-transform: none;
 }
 .site-header .navbar-collapse .nav > li.current a {

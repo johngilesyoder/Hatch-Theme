@@ -190,6 +190,9 @@ function html5blank_conditional_styles()
     } elseif ( is_home() ) {
         wp_register_style('blog-roll', get_template_directory_uri() . '/assets/css/sections/blog-roll.css', array(), '1.0', 'all');
         wp_enqueue_style('blog-roll'); // Enqueue it!
+    } elseif ( is_page( 'the-experience') ) {
+        wp_register_style('experience', get_template_directory_uri() . '/assets/css/sections/experience.css', array(), '1.0', 'all');
+        wp_enqueue_style('experience'); // Enqueue it!
     } elseif ( is_page() ) {
         wp_register_style('page', get_template_directory_uri() . '/assets/css/sections/page.css', array(), '1.0', 'all');
         wp_enqueue_style('page'); // Enqueue it!
