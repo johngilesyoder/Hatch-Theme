@@ -7241,6 +7241,9 @@ fieldset[disabled] .btn-secondary.active {
 .section-bottom .section-partners .section-header a img {
   margin-left: 8px;
 }
+.section-bottom .section-partners .innovation-partner-wrapper {
+  border-radius: 5px;
+}
 .carousel-fade .carousel-inner .item {
   opacity: 0;
   -webkit-transition-property: opacity;
