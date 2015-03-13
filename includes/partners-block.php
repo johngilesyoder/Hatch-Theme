@@ -14,10 +14,14 @@
     <div class="partners-column partners-platinum">
       <h3 class="partners-column-title">Platinum</h3>
       <div class="partner-logos">
-        <img class="partner-logo" src="http://placehold.it/95x95">
-        <img class="partner-logo" src="http://placehold.it/95x95">
-        <img class="partner-logo" src="http://placehold.it/95x95">
-        <img class="partner-logo" src="http://placehold.it/95x95">
+        <?php $args = array( 'category_name' => 'platinum', 'post_type' => 'sponsor', 'posts_per_page' => 4 );
+        $loop = new WP_Query( $args );
+        while ( $loop->have_posts() ) : $loop->the_post();
+        $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+        <div class="partner-logo">
+          <img src="<?php echo $image[0]; ?>">
+        </div>
+        <?php endwhile; ?>
       </div>
     </div>
     <div class="partners-column partners-gold">

@@ -48,6 +48,11 @@
   .navbar-collapse {
     .nav {
       & > li {
+        &.dropdown.open > a {
+          background: #fff;
+          color: #444;
+          border-color: #fff;
+        }
         &.current a {
           color: #fff;
         }
@@ -56,8 +61,13 @@
         }
       }
       .dropdown-menu {
+        border-color: #fff;
+        background: #fff;
         a {
-          color: @brand-primary;
+          color: #444;
+          &:hover {
+            background: #e6e6e6;
+          }
         }
       }
     }
@@ -422,6 +432,11 @@
     }
     .innovation-partner-wrapper {
       border-radius: 5px;
+    }
+    .partners-column {
+      .partner-logo {
+        background: rgba(255,255,255,.4);
+      }
     }
   }
 }

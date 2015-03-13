@@ -29,7 +29,73 @@
 @import "../globals/patterns.less";
 
 main {
-  margin-bottom: 60px;
+  padding: 30px 0 60px;
+}
+
+.page-content {
+  border-left: 1px solid @border-color;
+  .make-md-column(9);
+  padding-left: 30px;
+  &.page-full {
+    border-left: 0;
+    padding-left: 15px;
+    .make-md-column(12);
+  }
+}
+
+article {
+  color: #555;
+  p {
+    line-height: 1.6em;
+    margin-bottom: 15px;
+  }
+}
+
+.parent-page {
+  color: #999;
+  margin-bottom: 10px;
+  display: block;
+  img {
+    margin-left: 8px;
+  }
+}
+.page-title {
+  margin-bottom: 30px;
+  h1 {
+    font-weight: 300;
+    margin: 0;
+  }
+}
+
+.page-sidebar {
+  .make-md-column(3);
+  padding-right: 0;
+  h2 {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+    line-height: 39px;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li {
+      a {
+        line-height: 2em; 
+      }
+      &.current_page_item {
+        a {
+          color: @text-color;
+          text-decoration: none;
+          &:hover {
+            cursor: default;
+            color: @text-color;
+          }
+        }
+      }
+    }
+  }
 }
 
 
