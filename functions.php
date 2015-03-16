@@ -154,6 +154,9 @@ function html5blank_header_scripts()
 
         wp_register_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js', array(), null, false );
         wp_enqueue_script('bootstrap'); // Enqueue it!
+
+        wp_register_script('scotchpanel', get_template_directory_uri() . '/assets/js/lib/scotchPanel.js', array(), '1.0.0'); // Off Canvas Menu
+        wp_enqueue_script('scotchpanel'); // Enqueue it!
     }
 }
 
@@ -193,6 +196,9 @@ function html5blank_conditional_styles()
     } elseif ( is_page( 'the-experience') ) {
         wp_register_style('experience', get_template_directory_uri() . '/assets/css/sections/experience.css', array(), '1.0', 'all');
         wp_enqueue_style('experience'); // Enqueue it!
+    } elseif ( is_page( 'talk-to-us') ) {
+        wp_register_style('contact', get_template_directory_uri() . '/assets/css/sections/contact.css', array(), '1.0', 'all');
+        wp_enqueue_style('contact'); // Enqueue it!
     } elseif ( is_page() ) {
         wp_register_style('page', get_template_directory_uri() . '/assets/css/sections/page.css', array(), '1.0', 'all');
         wp_enqueue_style('page'); // Enqueue it!
