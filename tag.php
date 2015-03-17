@@ -1,19 +1,24 @@
 <?php get_header(); ?>
 
-	<main role="main">
-		<!-- section -->
-		<section>
+<div class="container container-blog">
+  <div class="blog-roll-wrapper">
+    <div class="category-title">
+      <h1><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-category.svg"><?php _e( '', 'html5blank' ); single_cat_title(); ?></h1>
+    </div>
+    <main role="main">
 
-			<h1><?php _e( 'Tag Archive: ', 'html5blank' ); echo single_tag_title('', false); ?></h1>
+      <?php get_template_part('loop'); ?>
 
-			<?php get_template_part('loop'); ?>
+      <div class="blog-pagination">
+        <div class="nav-previous"><?php next_posts_link( '&larr;&nbsp; Older posts' ); ?></div>
+        <div class="nav-next"><?php previous_posts_link( 'Newer posts &nbsp;&rarr;' ); ?></div>
+      </div>
 
-			<?php get_template_part('pagination'); ?>
-
-		</section>
-		<!-- /section -->
-	</main>
-
-<?php get_sidebar(); ?>
-
-<?php get_footer(); ?>
+    </main>
+  </div>
+  <div class="blog-sidebar-wrapper">
+    <aside class="blog-sidebar">
+      <?php get_sidebar(); ?>
+    </aside>
+  </div>
+</div>

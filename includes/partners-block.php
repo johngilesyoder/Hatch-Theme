@@ -1,7 +1,7 @@
 <section class="section-block section-partners">
   <div class="section-header">
     <h2 class="section-title">Partners</h2>
-    <a href="#">View All HATCH Partners<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-link-chevron.svg"></a>
+    <a href="/partners">View All HATCH Partners<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-link-chevron.svg"></a>
     <a href="#">Become a Sponsor<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-link-chevron.svg"></a>
   </div>
   <div class="row">

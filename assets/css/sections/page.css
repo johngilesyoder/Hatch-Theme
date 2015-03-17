@@ -6792,6 +6792,33 @@ fieldset[disabled] .btn-secondary.active {
 main {
   padding: 30px 0 60px;
 }
+.page-banner {
+  background-size: cover;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: -51px;
+  background-repeat: no-repeat;
+}
+.page-banner .page-title {
+  margin: 0;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.0001) 40%, #000000 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0001) 40%, #000000 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#ff000000', GradientType=0);
+}
+.page-banner .page-title .container {
+  position: relative;
+  height: 200px;
+}
+.page-banner .page-title h1 {
+  color: #fff;
+  position: absolute;
+  bottom: 30px;
+  left: 15px;
+  margin: 0;
+  font-size: 52px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
 .page-content {
   border-left: 1px solid #e6e6e6;
   position: relative;
@@ -6840,6 +6867,7 @@ article p {
 .page-title h1 {
   font-weight: 300;
   margin: 0;
+  font-family: klavika-medium, "Helvetica Neue", Arial, sans-serif;
 }
 .page-sidebar {
   position: relative;

@@ -7153,6 +7153,21 @@ body {
   margin: 0;
   display: inline-block;
 }
+.category-title h1 {
+  font-family: 'Tungsten A', 'Tungsten B';
+  font-size: 30px;
+  line-height: 1.5em;
+  font-style: normal;
+  letter-spacing: .02em;
+  margin: 0;
+  text-transform: uppercase;
+}
+.category-title h1 img {
+  margin-right: 15px;
+  vertical-align: middle;
+  top: -3px;
+  position: relative;
+}
 .blog-roll-wrapper main {
   padding-top: 110px;
 }
