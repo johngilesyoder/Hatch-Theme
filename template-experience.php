@@ -8,7 +8,7 @@
 		  		<span class="hero-date-location">Sep 16-20, 2015 &nbsp;//&nbsp; Bozeman, Montana</span>
 		  	</div>
 		  	<div>
-	  			<a href="#" class="btn btn-apply">Invite Only – <strong>Apply Now</strong></a>
+	  			<a href="/apply" class="btn btn-apply">Invite Only – <strong>Apply Now</strong></a>
 	  		</div>
 	  	</div>
   	</div>
@@ -25,7 +25,7 @@
   		<div class="what-summary">
   			<p>HATCH is a community, movement, and a series of experiences designed to ACTIVATE CREATIVITY to HATCH a better world. In it's 12th year, HATCH experience is a four day annual retreat meets summit gifted to 100 of the most provocative innovators, inventors, and cultural catalysts, across a wide range of disciplines.</p>
   			<p>Attendees who are invited each year cover a wide swath of humanity - Oscar-winning filmmakers, Grammy-winning Musicians, CEO’s and Founders of diverse companies and non- profits, designers from IDEO, NASA, Google, and a wide range of hackers, inventors, educators, disruptors, and mavericks.</p>
-  			<p>This cross-pollinated alchemy of global perspectives, allows thought leaders to re-ignite their creative vision... and opens them up to a new a network for life. The outcome has lead to hundreds new projects and collaborations, and ongoing mentorship opportunities. &nbsp;<a href="#">Learn more</a></p>
+  			<p>This cross-pollinated alchemy of global perspectives, allows thought leaders to re-ignite their creative vision... and opens them up to a new a network for life. The outcome has lead to hundreds new projects and collaborations, and ongoing mentorship opportunities. &nbsp;<a href="/about/what-is-hatch/">Learn more</a></p>
   		</div>
   		<aside class="section-aside hard-to-explain">
   			<div class="row">
@@ -53,12 +53,12 @@
   			<div class="why-block">
   				<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/experience/why-block-1.jpg">
   				<h3>Reversing the Creativity Crisis</h3>
-  				<p>Creativity is the magic ingredient in building a bright future.  HATCH is driven to infuse every member of the HATCH community by: uniting disruptors and mavericks, cross-pollinating diverse people and ideas, and creating experiences that activate the creator inside each and every person. &nbsp;<a href="#">Learn more about the Creativity Crisis</a></p>
+  				<p>Creativity is the magic ingredient in building a bright future. HATCH is driven to infuse every member of the HATCH community by: uniting disruptors and mavericks, cross-pollinating diverse people and ideas, and creating experiences that activate the creator inside each and every person. &nbsp;<a href="#">Learn more about the Creativity Crisis</a></p>
   			</div>
   			<div class="why-block">
   				<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/experience/why-block-2.jpg">
   				<h3>360&deg; Mentorship</h3>
-  				<p>Mentoring is a Hatch cornerstone. HATCH is built around meaningful relationships. What began as top-down mentorship has evolved into a ‘360’ mentorship approach; bottom-up and peer to peer. We encourage — if not expect — all HATCH community members to mentor, share, and challenge one another. &nbsp;<a href="#">Learn more about 360° Mentorships</a></p>
+  				<p>Mentoring is a Hatch cornerstone. HATCH is built around meaningful relationships. What began as top-down mentorship has evolved into a ‘360’ mentorship approach; bottom-up and peer to peer. We encourage — if not expect — all HATCH community members to mentor, share, and challenge one another. &nbsp;<a href="/mentorship/360-mentorship">Learn more about 360° Mentorships</a></p>
   			</div>
   		</div>
   		<div class="because-of-hatch">
@@ -155,7 +155,7 @@
 		  		<span class="hero-date-location">Sep 16-20, 2015 &nbsp;//&nbsp; Bozeman, Montana</span>
 		  	</div>
 		  	<div>
-	  			<a href="#" class="btn btn-apply">Invite Only – <strong>Apply Now</strong></a>
+	  			<a href="/apply" class="btn btn-apply">Invite Only – <strong>Apply Now</strong></a>
 	  		</div>
 	  	</div>
   		<!-- Partners -->

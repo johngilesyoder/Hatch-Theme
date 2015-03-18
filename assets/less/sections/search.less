@@ -37,99 +37,37 @@
 // Sidebar
 @import "../components/sidebar.less";
 
-main {
-  padding: 30px 0 60px;
-}
-
-.page-banner {
-  background-size: cover;
-  width: 100%;
+.search-title {
+  border-bottom: 1px solid #e6e6e6;
   margin-bottom: 30px;
-  margin-top: -51px;
-  background-repeat: no-repeat;
-  .page-title {
-    margin: 0;
-    #gradient > .vertical(rgba(0,0,0,.0001), rgba(0,0,0,1), 40%, 100%);
-    .container {
-      position: relative;
-      height: 200px;
-    }
-    h1 {
-      color: #fff;
-      position: absolute;
-      bottom: 30px;
-      left: 15px;
-      margin: 0;
-      font-size: 52px;
-      text-shadow: 0 1px 4px rgba(0,0,0,.5);
-    }
-  }
-}
-
-.page-content {
-  border-left: 1px solid @border-color;
-  .make-md-column(9);
-  padding-left: 30px;
-  &.page-full {
-    border-left: 0;
-    padding-left: 15px;
-    .make-md-column(12);
-  }
-}
-
-article {
-  color: #555;
-  p {
-    line-height: 1.6em;
-    margin-bottom: 15px;
-  }
-}
-
-.parent-page {
-  color: #999;
-  margin-bottom: 10px;
-  display: block;
-  img {
-    margin-left: 8px;
-  }
-}
-.page-title {
-  margin-bottom: 30px;
+  padding: 10px 15px;
+  width: auto;
+  padding-left: 1015px;
+  margin-left: -1000px;
+  background: #fafafa;
   h1 {
-    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.5em;
+    font-style: normal;
     margin: 0;
-    font-family: @font-family-klavika-medium;
+    img {
+      margin-right: 15px;
+      vertical-align: middle;
+      top: -1px;
+      position: relative;
+    }
+    .search-term {
+      font-family: @font-family-archer;
+      font-style: italic;
+      color: @brand-primary;
+      font-weight: 600;
+    }
   }
 }
 
-.page-sidebar {
-  .make-md-column(3);
-  padding-right: 0;
-  h2 {
-    font-weight: 600;
-    font-size: 18px;
-    margin: 0;
-    line-height: 39px;
-  }
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    li {
-      a {
-        line-height: 2em; 
-      }
-      &.current_page_item {
-        a {
-          color: @text-color;
-          text-decoration: none;
-          &:hover {
-            cursor: default;
-            color: @text-color;
-          }
-        }
-      }
-    }
+.blog-roll-wrapper {
+  main {
+    padding-top: 110px;
   }
 }
 
@@ -147,11 +85,7 @@ article {
 @media (min-width: 768px) and (max-width: 991px) {}
 
 // Up to tablet
-@media (max-width: 767px) {
-
-
-
-}
+@media (max-width: 767px) {}
 
 // Up to landscape phone
 @media (max-width: 480px) {}

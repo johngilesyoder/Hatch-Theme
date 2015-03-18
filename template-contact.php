@@ -6,7 +6,7 @@
       <div class="row">
         <div class="contact-left">
           <div class="row">
-            <div class="general-enquiry">
+            <div class="general-inquiry">
               <h2>General Enquiry</h2>
               <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
@@ -25,7 +25,7 @@
                 627 E Peach St.<br>
                 Bozeman, MT 59715
               </address>
-              <span class="contact-phone">406-209-9809</span>
+              <span class="contact-phone">(406) 209-9809</span>
               <a class="contact-email-address" href="mailto:hatchinfo@hatchexperience.org">hatchinfo@hatchexperience.org</a>
             </div>
             <div class="connect">
@@ -37,12 +37,15 @@
           </div>
         </div>
         <div class="contact-right">
-          <div class="corporate-enquiry">
-            <div class="enquiry-contact">
-              <div class="enquiry-wrapper">
+          <div class="general-inquiry">
+            <div class="inquiry-contact">
+              <div class="inquiry-wrapper">
                 <h2>Contact Us</h2>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper.</p>
-                <form accept-charset="UTF-8" action="/contact" class="contact-form" method="post"><input name="form_type" type="hidden" value="contact"><input name="utf8" type="hidden" value="✓">
+                <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 5 ); } ?>
+
+
+                <!-- <form accept-charset="UTF-8" action="/contact" class="contact-form" method="post"><input name="form_type" type="hidden" value="contact"><input name="utf8" type="hidden" value="✓">
                   <div id="contactFormWrapper">
                     <div class="row">
                       <div class="col-md-6">
@@ -62,7 +65,7 @@
                     <textarea rows="5" id="contactFormMessage" class="form-control" name="contact[body]" placeholder="Enquiry details"></textarea>
                     <button type="submit" class="btn btn-primary">Send</button>
                   </div>
-                </form>
+                </form> -->
               </div>
             </div>
           </div>

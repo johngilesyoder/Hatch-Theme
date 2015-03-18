@@ -6931,15 +6931,16 @@ h2 {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .contact-right {
     float: left;
-    width: 58.33333333%;
+    width: 100%;
   }
 }
 @media (min-width: 992px) {
   .contact-right {
-    margin-left: 8.33333333%;
+    float: left;
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
@@ -6948,7 +6949,7 @@ h2 {
     width: 50%;
   }
 }
-.general-enquiry {
+.general-inquiry {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -6956,25 +6957,25 @@ h2 {
   margin-bottom: 50px;
 }
 @media (min-width: 768px) {
-  .general-enquiry {
+  .general-inquiry {
     float: left;
     width: 50%;
   }
 }
 @media (min-width: 992px) {
-  .general-enquiry {
+  .general-inquiry {
     float: left;
     width: 100%;
   }
 }
-.general-enquiry address,
-.general-enquiry .contact-phone {
+.general-inquiry address,
+.general-inquiry .contact-phone {
   color: #555;
 }
-.general-enquiry address {
+.general-inquiry address {
   margin-bottom: 15px;
 }
-.general-enquiry .contact-phone {
+.general-inquiry .contact-phone {
   margin-bottom: 15px;
   display: block;
 }
@@ -6999,22 +7000,22 @@ h2 {
 .connect .social-link {
   margin-right: 15px;
 }
-.enquiry-contact .alert ul {
+.inquiry-contact .alert ul {
   margin-top: 10px;
 }
-.enquiry-contact .alert strong {
+.inquiry-contact .alert strong {
   font-weight: normal;
 }
-.enquiry-contact p {
+.inquiry-contact p {
   margin-bottom: 30px;
   color: #555;
 }
-.enquiry-contact form input[type="text"],
-.enquiry-contact form input[type="tel"],
-.enquiry-contact form input[type="email"] {
+.inquiry-contact form input[type="text"],
+.inquiry-contact form input[type="tel"],
+.inquiry-contact form input[type="email"] {
   height: 40px;
 }
-.enquiry-contact form .btn-primary {
+.inquiry-contact form .btn-primary {
   height: 50px;
   line-height: 50px;
   font-size: 18px;
@@ -7022,8 +7023,39 @@ h2 {
   padding: 0 65px;
   margin-top: 30px;
 }
-.footer-img {
-  margin-top: 110px;
+.ninja-forms-required-items {
+  display: none;
+}
+.general-inquiry .textarea-wrap textarea {
+  height: 100px;
+}
+.ninja-forms-success-msg {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.ninja-forms-success-msg p {
+  margin: 0;
+}
+.ninja-forms-success-msg p:first-child {
+  display: none;
+}
+.ninja-forms-success-msg p:last-child {
+  display: none;
+}
+.ninja-forms-field-error {
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #a94442 !Important;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  margin-top: 10px;
+  padding: 10px 15px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .connect {
@@ -7037,7 +7069,7 @@ h2 {
   h2 {
     font-size: 24px;
   }
-  .general-enquiry,
+  .general-inquiry,
   .connect {
     margin-bottom: 50px;
   }
@@ -7049,23 +7081,23 @@ h2 {
   h2 {
     margin-bottom: 15px;
   }
-  .general-enquiry .email-address {
+  .general-inquiry .email-address {
     font-size: 18px;
     margin-bottom: 15px;
   }
-  .general-enquiry address {
+  .general-inquiry address {
     margin-bottom: 15px;
   }
-  .enquiry-contact p {
+  .inquiry-contact p {
     margin-bottom: 15px;
   }
-  .enquiry-contact form .form-control {
+  .inquiry-contact form .form-control {
     margin-bottom: 15px;
   }
-  .enquiry-contact form input {
+  .inquiry-contact form input {
     height: 40px;
   }
-  .enquiry-contact form .btn-primary {
+  .inquiry-contact form .btn-primary {
     line-height: 39px;
     padding: 0 80px;
     height: 40px;

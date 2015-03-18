@@ -7130,119 +7130,34 @@ body {
     padding-top: 27px;
   }
 }
-main {
-  padding: 30px 0 60px;
-}
-.page-banner {
-  background-size: cover;
-  width: 100%;
+.search-title {
+  border-bottom: 1px solid #e6e6e6;
   margin-bottom: 30px;
-  margin-top: -51px;
-  background-repeat: no-repeat;
+  padding: 10px 15px;
+  width: auto;
+  padding-left: 1015px;
+  margin-left: -1000px;
+  background: #fafafa;
 }
-.page-banner .page-title {
+.search-title h1 {
+  font-size: 24px;
+  line-height: 1.5em;
+  font-style: normal;
   margin: 0;
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.0001) 40%, #000000 100%);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0001) 40%, #000000 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#ff000000', GradientType=0);
 }
-.page-banner .page-title .container {
+.search-title h1 img {
+  margin-right: 15px;
+  vertical-align: middle;
+  top: -1px;
   position: relative;
-  height: 200px;
 }
-.page-banner .page-title h1 {
-  color: #fff;
-  position: absolute;
-  bottom: 30px;
-  left: 15px;
-  margin: 0;
-  font-size: 52px;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
-}
-.page-content {
-  border-left: 1px solid #e6e6e6;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-left: 30px;
-}
-@media (min-width: 992px) {
-  .page-content {
-    float: left;
-    width: 75%;
-  }
-}
-.page-content.page-full {
-  border-left: 0;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 992px) {
-  .page-content.page-full {
-    float: left;
-    width: 100%;
-  }
-}
-article {
-  color: #555;
-}
-article p {
-  line-height: 1.6em;
-  margin-bottom: 15px;
-}
-.parent-page {
-  color: #999;
-  margin-bottom: 10px;
-  display: block;
-}
-.parent-page img {
-  margin-left: 8px;
-}
-.page-title {
-  margin-bottom: 30px;
-}
-.page-title h1 {
-  font-weight: 300;
-  margin: 0;
-  font-family: klavika-medium, "Helvetica Neue", Arial, sans-serif;
-}
-.page-sidebar {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-right: 0;
-}
-@media (min-width: 992px) {
-  .page-sidebar {
-    float: left;
-    width: 25%;
-  }
-}
-.page-sidebar h2 {
+.search-title h1 .search-term {
+  font-family: 'Archer SSm A', 'Archer SSm B';
+  font-style: italic;
+  color: #007da3;
   font-weight: 600;
-  font-size: 18px;
-  margin: 0;
-  line-height: 39px;
 }
-.page-sidebar ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-.page-sidebar ul li a {
-  line-height: 2em;
-}
-.page-sidebar ul li.current_page_item a {
-  color: #222222;
-  text-decoration: none;
-}
-.page-sidebar ul li.current_page_item a:hover {
-  cursor: default;
-  color: #222222;
+.blog-roll-wrapper main {
+  padding-top: 110px;
 }
 /*# sourceMappingURL=search.css.map */

@@ -197,7 +197,6 @@
     <section class="section-block section-mentorship">
       <div class="section-header">
         <h2 class="section-title">Mentorship</h2>
-        <a href="#">Learn More<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-link-chevron.svg"></a>
       </div>
       <div class="row">
         <div class="mentorship-block">
