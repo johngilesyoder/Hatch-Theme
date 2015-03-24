@@ -113,13 +113,109 @@
 @media (min-width: 1200px) {}
 
 // Desktop to large desktop
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .post {
+    .post-format {
+      display: none;
+    }
+  }
+
+}
 
 // Tablet to desktop
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .post {
+    .post-format {
+      display: none;
+    }
+  }
+  .post.type-post {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    .post-title {
+      font-size: 32px;
+      .icon-external-link {
+        top: 0;
+      }
+    }
+    .wp-post-image {
+      .img-responsive();
+      margin-bottom: 15px;
+    }
+    .post-content {
+      margin-bottom: 50px;
+      color: #555;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .share-post {
+      margin-bottom: 20px;
+      .like-button {
+        display: inline-block;
+        margin-right: 15px;
+        vertical-align: top;
+        position: relative;
+        top: -4px;
+        margin-top: 3px;
+      }
+      .tweet-button {
+        display: inline-block;
+        margin-right: 15px;
+        vertical-align: top;
+      }
+    }
+  }
+
+}
 
 // Up to tablet
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+
+  .post {
+    .post-format {
+      display: none;
+    }
+  }
+  .post.type-post {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    .post-title {
+      font-size: 32px;
+      .icon-external-link {
+        top: 0;
+      }
+    }
+    .wp-post-image {
+      .img-responsive();
+      margin-bottom: 15px;
+    }
+    .post-content {
+      margin-bottom: 50px;
+      color: #555;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .share-post {
+      margin-bottom: 20px;
+      .like-button {
+        display: inline-block;
+        margin-right: 15px;
+        vertical-align: top;
+        position: relative;
+        top: -4px;
+        margin-top: 3px;
+      }
+      .tweet-button {
+        display: inline-block;
+        margin-right: 15px;
+        vertical-align: top;
+      }
+    }
+  }
+
+}
 
 // Up to landscape phone
 @media (max-width: 480px) {}

@@ -1,8 +1,10 @@
 <section class="section-block section-partners">
   <div class="section-header">
     <h2 class="section-title">Partners</h2>
-    <a href="/partners">View All HATCH Partners<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-link-chevron.svg"></a>
-    <a href="/talk-to-us">Become a Sponsor<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-link-chevron.svg"></a>
+    <div class="section-header-links">
+      <a href="/partners">View All HATCH Partners<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-link-chevron.svg"></a>
+      <a href="/talk-to-us">Become a Sponsor<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-link-chevron.svg"></a>
+    </div>
   </div>
   <div class="row">
     <a href="#" class="innovation-partner">
@@ -27,19 +29,27 @@
     <div class="partners-column partners-gold">
       <h3 class="partners-column-title">Gold</h3>
       <div class="partner-logos">
-        <img class="partner-logo" src="http://placehold.it/95x95">
-        <img class="partner-logo" src="http://placehold.it/95x95">
-        <img class="partner-logo" src="http://placehold.it/95x95">
-        <img class="partner-logo" src="http://placehold.it/95x95">
+        <?php $args = array( 'category_name' => 'platinum', 'post_type' => 'sponsor', 'posts_per_page' => 4 );
+        $loop = new WP_Query( $args );
+        while ( $loop->have_posts() ) : $loop->the_post();
+        $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+        <div class="partner-logo">
+          <img src="<?php echo $image[0]; ?>">
+        </div>
+        <?php endwhile; ?>
       </div>
     </div>
     <div class="partners-column partners-silver">
       <h3 class="partners-column-title">Silver</h3>
       <div class="partner-logos">
-        <img class="partner-logo" src="http://placehold.it/95x95">
-        <img class="partner-logo" src="http://placehold.it/95x95">
-        <img class="partner-logo" src="http://placehold.it/95x95">
-        <img class="partner-logo" src="http://placehold.it/95x95">
+        <?php $args = array( 'category_name' => 'platinum', 'post_type' => 'sponsor', 'posts_per_page' => 4 );
+        $loop = new WP_Query( $args );
+        while ( $loop->have_posts() ) : $loop->the_post();
+        $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+        <div class="partner-logo">
+          <img src="<?php echo $image[0]; ?>">
+        </div>
+        <?php endwhile; ?>
       </div>
     </div>
   </div>

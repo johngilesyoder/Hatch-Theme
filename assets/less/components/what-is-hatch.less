@@ -29,3 +29,44 @@
     line-height: 36px;
   }
 }
+
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .what-is-hatch {
+    padding: 40px 0;
+  }
+  
+}
+
+// Up to tablet
+@media (max-width: 767px) {
+
+  .what-is-hatch {
+    padding: 30px 0;
+    p {
+      font-size: 16px;
+      line-height: 26px;
+      margin: 0 0 30px;
+    }
+    .btn-primary {
+      height: 40px;
+      line-height: 40px;
+      font-size: 18px;
+    }
+  }
+
+}
+
+// Up to landscape phone
+@media (max-width: 480px) {}

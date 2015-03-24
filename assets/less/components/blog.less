@@ -46,7 +46,7 @@ body {
   position: fixed;
   top: 137px;
   width: 360px;
-  right:50%;
+  right: 50%;
   margin-right: -570px;
   bottom: 0;
 }
@@ -76,13 +76,133 @@ body {
 @media (min-width: 1200px) {}
 
 // Desktop to large desktop
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .blog-roll-wrapper {
+    width: 595px;
+    top: 137px;
+    main {
+      padding-right: 30px;
+      padding-top: 30px;
+    }
+  }
+  .blog-sidebar-wrapper {
+    margin-right: -470px;
+  }
+
+}
 
 // Tablet to desktop
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+
+  html,
+  body {
+    height: auto;
+    min-height: 0;
+  }
+  .topbar {
+    display: none;
+  }
+  .site-header {
+    margin-bottom: 30px;
+    position: static;
+  }
+  .container-blog {
+    position: relative;
+    padding-top: 0;
+    height: auto;
+  }
+  .blog-roll-wrapper {
+    width: 100%;
+    position: relative;
+    left: auto;
+    top: auto;
+    bottom: auto;
+    main {
+      position: relative;
+      top: auto;
+      bottom: auto;
+      left: auto;
+      right: auto;
+      padding-right: 0;
+      padding-left: 0;
+      padding-top: 0;
+    }
+  }
+  .blog-sidebar-wrapper {
+    border-top: 4px solid @brand-secondary;
+    position: static;
+    top: auto;
+    width: auto;
+    right: auto;
+    bottom: auto;
+    margin: 0 -15px 30px;
+  }
+  .blog-pagination {
+    padding-bottom: 30px;
+  }
+  .nav-previous,
+  .nav-next {
+    font-size: 24px;
+  }
+
+}
 
 // Up to tablet
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+
+  html,
+  body {
+    height: auto;
+    min-height: 0;
+  }
+  .topbar {
+    display: none;
+  }
+  .site-header {
+    margin-bottom: 30px;
+    position: static;
+  }
+  .container-blog {
+    position: relative;
+    padding-top: 0;
+    height: auto;
+  }
+  .blog-roll-wrapper {
+    width: 100%;
+    position: relative;
+    left: auto;
+    top: auto;
+    bottom: auto;
+    main {
+      position: relative;
+      top: auto;
+      bottom: auto;
+      left: auto;
+      right: auto;
+      padding-right: 0;
+      padding-left: 0;
+      padding-top: 0;
+    }
+  }
+  .blog-sidebar-wrapper {
+    border-top: 4px solid @brand-secondary;
+    position: static;
+    top: auto;
+    width: auto;
+    right: auto;
+    bottom: auto;
+    margin: 0 -15px 30px;
+  }
+  .blog-pagination {
+    padding-bottom: 30px;
+  }
+  .nav-previous,
+  .nav-next {
+    font-size: 24px;
+  }
+
+}
 
 // Up to landscape phone
 @media (max-width: 480px) {}

@@ -1,6 +1,9 @@
 // page.less
 // -----------------------------------------------------------------
 
+// Custom Fonts
+@import "../globals/fonts.less";
+
 // Bootstrap UI Framework
 @import "../bootstrap/bootstrap.less";
 
@@ -29,7 +32,7 @@
 @import "../globals/patterns.less";
 
 main {
-  padding: 30px 0 60px;
+  padding: 30px 0 50px;
 }
 
 .page-banner {
@@ -60,11 +63,13 @@ main {
 .page-content {
   border-left: 1px solid @border-color;
   .make-md-column(9);
+  .make-md-column-push(3);
   padding-left: 30px;
   &.page-full {
     border-left: 0;
     padding-left: 15px;
     .make-md-column(12);
+    .make-md-column-push(0);
   }
 }
 
@@ -95,6 +100,7 @@ article {
 
 .page-sidebar {
   .make-md-column(3);
+  .make-md-column-pull(9);
   padding-right: 0;
   h2 {
     font-weight: 600;
@@ -135,12 +141,75 @@ article {
 @media (min-width: 992px) and (max-width: 1199px) {}
 
 // Tablet to desktop
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .page-content {
+    border-left: 0;
+    padding-left: 15px;
+    &.page-full {
+      border-left: 0;
+      padding-left: 15px;
+    }
+  }
+
+  .page-sidebar {
+    margin-top: 30px;
+    background: @gray-bg;
+    padding: 15px;
+    ul {
+      padding: 0 0 0 15px;
+    }
+  }
+
+}
 
 // Up to tablet
 @media (max-width: 767px) {
 
+  main {
+    padding: 30px 0;
+  }
 
+  .page-banner {
+    margin-top: -30px;
+    background-repeat: no-repeat;
+    .page-title {
+      margin: 0;
+      #gradient > .vertical(rgba(0,0,0,.0001), rgba(0,0,0,1), 40%, 100%);
+      .container {
+        position: relative;
+        height: 200px;
+      }
+      h1 {
+        color: #fff;
+        position: absolute;
+        bottom: 20px;
+        left: 15px;
+        margin: 0;
+        font-size: 36px;
+        text-shadow: 0 1px 4px rgba(0,0,0,.5);
+      }
+    }
+  }
+
+  .page-content {
+    border-left: 0;
+    padding-left: 15px;
+    &.page-full {
+      border-left: 0;
+      padding-left: 15px;
+    }
+  }
+
+  .page-sidebar {
+    margin-bottom: -30px;
+    margin-top: 30px;
+    background: @gray-bg;
+    padding: 15px;
+    ul {
+      padding: 0 0 0 15px;
+    }
+  }
 
 }
 

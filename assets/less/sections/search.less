@@ -1,6 +1,9 @@
 // search.less
 // -----------------------------------------------------------------
 
+// Custom Fonts
+@import "../globals/fonts.less";
+
 // Bootstrap UI Framework
 @import "../bootstrap/bootstrap.less";
 
@@ -82,10 +85,52 @@
 @media (min-width: 992px) and (max-width: 1199px) {}
 
 // Tablet to desktop
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .site-header {
+    margin-bottom: 0;
+  }
+  .search-title {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    width: auto;
+    margin: 0 -15px 30px;
+    h1 {
+      font-size: 16px;
+    }
+  }
+
+  .blog-roll-wrapper {
+    main {
+      padding-top: 0;
+    }
+  }
+  
+}
 
 // Up to tablet
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+
+  .site-header {
+    margin-bottom: 0;
+  }
+  .search-title {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    width: auto;
+    margin: 0 -15px 30px;
+    h1 {
+      font-size: 16px;
+    }
+  }
+
+  .blog-roll-wrapper {
+    main {
+      padding-top: 0;
+    }
+  }
+
+}
 
 // Up to landscape phone
 @media (max-width: 480px) {}

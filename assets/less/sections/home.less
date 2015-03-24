@@ -1,6 +1,9 @@
 // home.less
 // -----------------------------------------------------------------
 
+// Custom Fonts
+@import "../globals/fonts.less";
+
 // Bootstrap UI Framework
 @import "../bootstrap/bootstrap.less";
 
@@ -129,6 +132,9 @@
       margin: 0;
       display: inline-block;
     }
+    .section-header-links {
+      display: inline;
+    }
     a {
       margin-left: 20px;
       img {
@@ -161,7 +167,7 @@
     .conference-title {
       font-size: 60px;
       margin: 10px 0 0;
-      line-height: .75em;
+      line-height: .9em;
       span {
         color: #666;
       }
@@ -248,7 +254,8 @@
 
 .section-hatchings {
   .hatching-block {
-    .make-md-column(4);
+    .make-sm-column(4);
+    display: block;
     text-decoration: none;
     color: @text-color;
     position: relative;
@@ -340,13 +347,164 @@
 @media (min-width: 1200px) {}
 
 // Desktop to large desktop
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .section-conference {
+    .conference-info {
+      .conference-actions {
+        .btn-apply {
+          font-size: 18px;
+          padding: 0 40px;
+        }
+        .btn-learn-more {
+          font-size: 16px;
+          padding: 0 30px;
+        }
+      }
+    }
+  }
+
+}
 
 // Tablet to desktop
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .section-conference {
+    .conference-photo {
+      margin-bottom: 30px;
+      .conference-photo-title {
+        bottom: 10px;
+        font-size: 42px;
+        line-height: 1em;
+      }
+    }
+    .conference-info {
+      .conference-date {
+        font-size: 18px;
+      }
+      .conference-actions {
+        margin-top: 30px;
+        .btn {
+        }
+        .btn-apply {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .section-mentorship {
+    .mentorship-block {
+      margin-bottom: 30px;
+      .block-wrapper {
+        min-height: 0;
+        .mentorship-block-img {
+          span {
+            font-size: 42px;
+          }
+        }
+      }
+    }
+  }
+
+  .section-hatchings {
+    .hatching-block {
+      .block-wrapper {
+        min-height: 260px;
+      }
+    }
+  }
+
+}
 
 // Up to tablet
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+
+  .section-block {
+    margin-bottom: 50px;
+    .section-header {
+      margin-bottom: 20px;
+      .section-title {
+        font-family: @font-family-klavika-medium;
+        font-size: 28px;
+        color: @brand-secondary;
+        text-transform: uppercase;
+        margin: 0 0 10px;
+        display: inline-block;
+      }
+      .section-header-links {
+        display: block;
+      }
+      a {
+        margin-left: 0;
+        display: block;
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .section-conference {
+    .conference-photo {
+      margin-bottom: 30px;
+      .conference-photo-title {
+        bottom: 10px;
+        font-size: 42px;
+        line-height: 1em;
+      }
+    }
+    .conference-info {
+      .conference-date {
+        font-size: 18px;
+      }
+      .conference-actions {
+        margin-top: 30px;
+        .btn {
+          width: 100%;
+        }
+        .btn-apply {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .section-mentorship {
+    .mentorship-block {
+      margin-bottom: 15px;
+      .block-wrapper {
+        .mentorship-block-img {
+          span {
+            font-size: 42px;
+          }
+        }
+      }
+    }
+  }
+
+  .section-hatchings {
+    .hatching-block {
+      transition: none;
+      margin-bottom: 15px;
+      &:hover {
+        top: 0;
+        .block-wrapper {
+          background: @gray-bg-hover;
+        }
+      }
+      .block-wrapper {
+        transition: none;
+      }
+    }
+  }
+
+  .section-partners {
+    margin-bottom: 20px
+  }
+
+}
 
 // Up to landscape phone
 @media (max-width: 480px) {}

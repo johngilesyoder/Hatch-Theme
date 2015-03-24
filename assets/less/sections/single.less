@@ -1,6 +1,9 @@
 // single.less
 // -----------------------------------------------------------------
 
+// Custom Fonts
+@import "../globals/fonts.less";
+
 // Bootstrap UI Framework
 @import "../bootstrap/bootstrap.less";
 
@@ -76,13 +79,63 @@
 @media (min-width: 1200px) {}
 
 // Desktop to large desktop
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .view-all-posts {
+    margin-bottom: 15px;
+  }
+  
+}
 
 // Tablet to desktop
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .blog-roll-wrapper {
+    main {
+      padding-top: 0;
+    }
+  }
+
+  .view-all-posts {
+    margin-bottom: 15px;
+  }
+
+  .profile-intro-statement {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+
+  .profile-closing-statement {
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+
+}
 
 // Up to tablet
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+
+  .blog-roll-wrapper {
+    main {
+      padding-top: 0;
+    }
+  }
+
+  .view-all-posts {
+    margin-bottom: 15px;
+  }
+
+  .profile-intro-statement {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+
+  .profile-closing-statement {
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+
+}
 
 // Up to landscape phone
 @media (max-width: 480px) {}

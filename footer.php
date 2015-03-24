@@ -47,7 +47,7 @@
 	      </div>
         <div class="footer-company">
         	<div class="container">
-          	© HATCHfest 2004-<?php echo date('Y'); ?>. “HATCH” is a registered trademark. All rights reserved. All logos, except for HATCH logos, are trademarks of their respective companies.
+          	<span>© HATCHfest 2004-<?php echo date('Y'); ?>. </span>“HATCH” is a registered trademark. All rights reserved. All logos, except for HATCH logos, are trademarks of their respective companies.
         	</div>
 	      </div>
 	    </footer>

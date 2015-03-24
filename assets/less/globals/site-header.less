@@ -10,12 +10,12 @@
   border-right: 0;
   .navbar-header {
     .navbar-brand {
-      padding: 35px 15px 0;
+      padding: 20px 15px 0;
       .site-logo {
         .hatch-logo();
         font-size: 60px;
         display: block;
-        line-height: .5em;
+        line-height: .7em;
       }
       .site-logo-date {
         font-family: 'Archer SSm A', 'Archer SSm B';
@@ -111,13 +111,201 @@
 @media (min-width: 1200px) {}
 
 // Desktop to large desktop
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .site-header {
+    .navbar-collapse {
+      .nav {
+        & > li {
+          &.dropdown {
+            a {
+              padding: 9px 9px;
+            }
+          }
+          & > a {
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+}
 
 // Tablet to desktop
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .site-header {
+    min-height: 75px;
+    .container {
+      width: 100%;
+    }
+    .navbar-header {
+      .navbar-toggle {
+        margin-top: 20.5px;
+        margin-bottom: 20.5px;
+      }
+      .navbar-brand {
+        padding: 15px 15px 0;
+        height: 75px;
+        .site-logo {
+          font-size: 45px;
+        }
+        .site-logo-date {
+          font-size: 13px;
+        }
+      }
+    }
+    .navbar-collapse {
+      padding-top: 0;
+      .nav {
+        & > li {
+          &:nth-child(6) > a {
+            text-transform: none;
+          }
+          &.dropdown {
+            a {
+              border: 0;
+              border-radius: 0;
+            }
+            .dropdown-menu {
+              border-color: transparent;
+              border-radius: 0;
+              a {
+                color: @link-color;
+                padding-left: 30px;
+                font-family: @font-family-tungsten;
+                font-size: 21px;
+                color: @text-color;
+                &:hover,
+                &:focus {
+                  background-color: #f2f2f2;
+                }
+              }
+            }
+            &.open > a {
+              border-bottom: 0;
+              z-index: 0;
+            }
+          }
+          &.current > a,
+          &.current_page_ancestor > a {
+            & > span {
+              border-bottom: 0;
+            }
+          }
+          & > a {
+            font-size: 21px;
+            &:hover,
+            &:focus {
+              background-color: #f2f2f2;
+            }
+            & > span {
+              padding-bottom: 0;
+              &:hover {
+                border-bottom: 0;
+              }
+            }
+          }
+          .dropdown-menu {
+            box-shadow: none;
+            padding-top: 0;
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+}
 
 // Up to tablet
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+
+
+  .site-header {
+    min-height: 75px;
+    margin-bottom: 0;
+    .navbar-header {
+      .navbar-toggle {
+        margin-top: 20.5px;
+        margin-bottom: 20.5px;
+      }
+      .navbar-brand {
+        padding: 15px 15px 0;
+        height: 75px;
+        .site-logo {
+          font-size: 45px;
+        }
+        .site-logo-date {
+          font-size: 13px;
+          color: #999
+        }
+      }
+    }
+    .navbar-collapse {
+      padding-top: 0;
+      .nav {
+        & > li {
+          &:nth-child(6) > a {
+            text-transform: none;
+          }
+          &.dropdown {
+            a {
+              border: 0;
+              border-radius: 0;
+            }
+            .dropdown-menu {
+              border-color: transparent;
+              border-radius: 0;
+              a {
+                color: @link-color;
+                padding-left: 30px;
+                font-family: @font-family-tungsten;
+                font-size: 21px;
+                color: @text-color;
+                &:hover,
+                &:focus {
+                  background-color: #f2f2f2;
+                }
+              }
+            }
+            &.open > a {
+              border-bottom: 0;
+              z-index: 0;
+            }
+          }
+          &.current > a,
+          &.current_page_ancestor > a {
+            & > span {
+              border-bottom: 0;
+            }
+          }
+          & > a {
+            font-size: 21px;
+            &:hover,
+            &:focus {
+              background-color: #f2f2f2;
+            }
+            & > span {
+              padding-bottom: 0;
+              &:hover {
+                border-bottom: 0;
+              }
+            }
+          }
+          .dropdown-menu {
+            box-shadow: none;
+            padding-top: 0;
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+}
 
 // Up to landscape phone
 @media (max-width: 480px) {}

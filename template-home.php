@@ -226,7 +226,9 @@
     <section class="section-block section-hatchings">
       <div class="section-header">
         <h2 class="section-title">Upcoming Hatchings</h2>
-        <a href="#">View Calendar<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-link-chevron.svg"></a>
+        <div class="section-header-links">
+          <a href="#">View Calendar<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-link-chevron.svg"></a>
+        </div>
       </div>
       <div class="row">
         <a href="#" class="hatching-block">

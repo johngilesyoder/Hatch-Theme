@@ -25,7 +25,7 @@
   		<div class="what-summary">
   			<p>HATCH is a community, movement, and a series of experiences designed to ACTIVATE CREATIVITY to HATCH a better world. In it's 12th year, HATCH experience is a four day annual retreat meets summit gifted to 100 of the most provocative innovators, inventors, and cultural catalysts, across a wide range of disciplines.</p>
   			<p>Attendees who are invited each year cover a wide swath of humanity - Oscar-winning filmmakers, Grammy-winning Musicians, CEO’s and Founders of diverse companies and non- profits, designers from IDEO, NASA, Google, and a wide range of hackers, inventors, educators, disruptors, and mavericks.</p>
-  			<p>This cross-pollinated alchemy of global perspectives, allows thought leaders to re-ignite their creative vision... and opens them up to a new a network for life. The outcome has lead to hundreds new projects and collaborations, and ongoing mentorship opportunities. &nbsp;<a href="/about/what-is-hatch/">Learn more</a></p>
+  			<p>This cross-pollinated alchemy of global perspectives, allows thought leaders to re-ignite their creative vision... and opens them up to a new a network for life. The outcome has lead to hundreds new projects and collaborations, and ongoing mentorship opportunities. &nbsp; <a href="/about/what-is-hatch/">Learn more</a></p>
   		</div>
   		<aside class="section-aside hard-to-explain">
   			<div class="row">
