@@ -9,7 +9,10 @@
       switch( $(".container").width() > 970 )
       {
         case true:
+          //Get template from localized data in function.php::223
           $('#posts-hero').html(template.tile);
+
+          //Do magic based on screen size
           if( $(".container").width() > 1170 )
           {
             // DOM ready, take it away
@@ -35,6 +38,7 @@
           }
           break;
         default:
+          //If below 970 loat carousel from localized data in function.php::223
           $('#posts-hero').html(template.carousel);
       }
     }
