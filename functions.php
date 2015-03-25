@@ -155,7 +155,7 @@ function html5blank_header_scripts()
         wp_register_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js', array(), null, false );
         wp_enqueue_script('bootstrap'); // Enqueue it!
 
-        wp_register_script('scotchpanel', get_template_directory_uri() . '/assets/js/lib/scotchPanel.js', array(), '1.0.0'); // Off Canvas Menu
+        wp_register_script('scotchpanel', get_template_directory_uri() . '/assets/js/lib/scotchPanels.js', array(), '1.0.0'); // Off Canvas Menu
         wp_enqueue_script('scotchpanel'); // Enqueue it!
     }
 }
@@ -170,6 +170,11 @@ function html5blank_conditional_scripts()
 
         wp_register_script('masonry-horizontal', get_template_directory_uri() . '/assets/js/lib/masonry-horizontal.js', array(), '1.1.0'); // Masonry Horizontal
         wp_enqueue_script('masonry-horizontal'); // Enqueue it!
+
+        wp_register_script('flickity', get_template_directory_uri() . '/assets/js/lib/flickity.pkgd.min.js', array(), '1.0.0' ); // Flickity
+        wp_enqueue_script('flickity'); // Enqueue it!
+
+
 
         wp_register_script('home', get_template_directory_uri() . '/assets/js/sections/home.js', array(), null, false ); // Home scripts
         wp_enqueue_script('home'); // Enqueue it!

@@ -507,14 +507,75 @@
 @media (min-width: 992px) and (max-width: 1199px) {}
 
 // Tablet to desktop
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .site-header {
+    margin-bottom: 0;
+    background-color: #000;
+    .navbar-header {
+      .navbar-toggle {
+        border-color: rgba(255,255,255,.3);
+        &:hover {
+          background: rgba(255,255,255,.3);
+        }
+        .icon-bar {
+          background-color: #fff;
+        }
+      }
+      .navbar-brand {
+        .site-logo-date {
+          color: #777;
+        }
+      }
+    }
+    .navbar-collapse {
+      border-color: transparent;
+      border-bottom: 3px solid @brand-secondary;
+      .nav > li > {
+        a:hover,
+        a:focus {
+          background-color: rgba(255,255,255,.2);
+        }
+      }
+    }
+  }
+
+}
 
 // Up to tablet
 @media (max-width: 767px) {
 
   .site-header {
-    margin-bottom: -76px;
+    margin-bottom: 0;
+    background-color: #000;
+    .navbar-header {
+      .navbar-toggle {
+        border-color: rgba(255,255,255,.3);
+        &:hover {
+          background: rgba(255,255,255,.3);
+        }
+        .icon-bar {
+          background-color: #fff;
+        }
+      }
+      .navbar-brand {
+        .site-logo-date {
+          color: #777;
+        }
+      }
+    }
+    .navbar-collapse {
+      border-color: transparent;
+      border-bottom: 3px solid @brand-secondary;
+      .nav > li > {
+        a:hover,
+        a:focus {
+          background-color: rgba(255,255,255,.2);
+        }
+      }
+    }
   }
+
 
   .section-block {
     padding: 50px 0;
@@ -562,8 +623,9 @@
   }
 
   .section-hero {
-    height: 600px;
+    height: 525px;
     border-bottom: 8px solid #000;
+    padding-top: 0;
   }
 
   .section-what {

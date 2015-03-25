@@ -31,11 +31,14 @@
 // Patterns
 @import "../globals/patterns.less";
 
-// Patterns
+// What is Hatch
 @import "../components/what-is-hatch.less";
 
-// Patterns
+// Partners Block
 @import "../components/partners-block.less";
+
+// Flickity
+@import "../components/flickity.less";
 
 .site-header {
   margin-bottom: 0;
@@ -43,11 +46,7 @@
 
 .posts-hero {
   margin-bottom: 60px;
-  -webkit-backface-visibility: hidden;
-    -webkit-transform-style: preserve-3d;
   .clearfix();
-  width: 100%;
-  overflow: auto;
   padding: 30px;
   background: @gray-bg;
   .isotope {
@@ -61,12 +60,6 @@
     background: #ddd;
     margin-right: 30px;
     display: inline-block;
-    -webkit-transition: all 150ms ease-in-out;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform-style: preserve-3d;
-    &:hover {
-      -webkit-transform: scale(1.05);
-    }
     .article-wrapper {
       background-size: cover;
       background-position: 50% 50%;
@@ -348,6 +341,26 @@
 
 // Desktop to large desktop
 @media (min-width: 992px) and (max-width: 1199px) {
+
+  .posts-hero {
+    .isotope {
+      height: 393px;
+    }
+    .item {
+      width: 205px;
+      height: 111px;
+      &.size2 {
+        height: 252px;
+      }
+      &.size3 {
+        height: 393px;
+      }
+      &.size2,
+      &.size3 {
+        width: 440px;
+      }
+    }
+  }
 
   .section-conference {
     .conference-info {
