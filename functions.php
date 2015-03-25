@@ -11,6 +11,28 @@
 
 // Load any external files you have here
 
+
+/*------------------------------------*\
+  Home AJAX Support
+\*------------------------------------*/
+function hatch_get_tiles()
+{
+    ob_start();
+    get_template_part( 'includes/tile-hero' );
+    $tiles = ob_get_contents();
+    ob_end_clean();
+    return $tiles;
+}
+
+function hatch_get_carousel()
+{
+    ob_start();
+    get_template_part( 'includes/carousel-hero' );
+    $carousel = ob_get_contents();
+    ob_end_clean();
+    return $carousel;
+}
+
 /*------------------------------------*\
   Theme Support
 \*------------------------------------*/
@@ -177,6 +199,13 @@ function html5blank_conditional_scripts()
 
 
         wp_register_script('home', get_template_directory_uri() . '/assets/js/sections/home.js', array(), null, false ); // Home scripts
+        // Localize the script with new data
+    
+        $translation_array = array(
+            'tile' => hatch_get_tiles(),
+            'carousel' => hatch_get_carousel()
+        );
+        wp_localize_script( 'home', 'template', $translation_array );
         wp_enqueue_script('home'); // Enqueue it!
     
     }
@@ -444,6 +473,7 @@ function html5blankcomments($comment, $args, $depth)
 
 // Add Actions
 add_action('init', 'html5blank_header_scripts'); // Add Custom Scripts to wp_head
+add_action('init', 'hatch_localize_script'); // Localize script for the AJAX url
 add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditional Page Scripts
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet

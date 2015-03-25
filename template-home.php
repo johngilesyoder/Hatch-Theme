@@ -2,8 +2,7 @@
 
   <!-- Posts hero -->
   <section id="posts-hero" class="posts-hero">
-    <?php get_template_part( 'includes/tile-hero' ); ?>
-    <?php //get_template_part( 'includes/carousel-hero' ); ?>
+  
   </section>
 
   <div class="container">

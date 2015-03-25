@@ -3,17 +3,15 @@
   $(function () {
     
     'use strict';
-    
-    // run test on initial page load
-    checkSize();
-
-    // run test on resize of the window
-    $(window).resize(checkSize);
 
     //Function to the css rule
     function checkSize(){
-        if ($(".container").css("width") == "1170px" ){
-
+      switch( $(".container").width() > 970 )
+      {
+        case true:
+          $('#posts-hero').html(template.tile);
+          if( $(".container").width() > 1170 )
+          {
             // DOM ready, take it away
             $('.isotope').isotope({
               layoutMode: 'masonryHorizontal',
@@ -24,12 +22,7 @@
                 gutter: 30
               }
             });
-
-        }
-        if ($(".container").css("width") == "970px" ){
-            // your code here
-            
-            // DOM ready, take it away
+          } else {
             $('.isotope').isotope({
               layoutMode: 'masonryHorizontal',
               itemSelector: '.item',
@@ -39,10 +32,18 @@
                 gutter: 30
               }
             });
-        }
+          }
+          break;
+        default:
+          $('#posts-hero').html(template.carousel);
+      }
     }
 
+    // run test on initial page load
+    checkSize();
 
+    // run test on resize of the window
+    $(window).resize(checkSize);
     
   });
   
