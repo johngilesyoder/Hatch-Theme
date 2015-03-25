@@ -3,17 +3,16 @@
   $(function () {
     
     'use strict';
-
     //Function to the css rule
     function checkSize(){
-      switch( $(".container").width() > 970 )
+      switch( $(window).width() > 970 )
       {
         case true:
           //Get template from localized data in function.php::223
           $('#posts-hero').html(template.tile);
 
           //Do magic based on screen size
-          if( $(".container").width() > 1170 )
+          if( $('.container').width() >= 1140 )
           {
             // DOM ready, take it away
             $('.isotope').isotope({
@@ -24,7 +23,7 @@
                 rowHeight: 144,
                 gutter: 30
               }
-            });
+            }).isotope('bindResize');
           } else {
             $('.isotope').isotope({
               layoutMode: 'masonryHorizontal',
