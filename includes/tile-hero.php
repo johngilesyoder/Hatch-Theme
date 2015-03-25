@@ -1,5 +1,5 @@
 <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "pageDots": false }'>
-  <div class="gallery-cell">
+  <div class="gallery-cell"> <!-- PANEL WRAPPER -->
     <div class="isotope">
       <a href="#" class="item">
         <article class="article-wrapper" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/img/fake-post-img.png');">
@@ -43,7 +43,7 @@
       </a>
     </div>
   </div>
-  <div class="gallery-cell">
+  <div class="gallery-cell"> <!-- PANEL WRAPPER -->
     <div class="isotope">
       <a href="#" class="item">
         <article class="article-wrapper" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/img/fake-post-img.png');">
