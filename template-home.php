@@ -104,7 +104,5 @@
   <!-- What is HATCH -->
   <?php get_template_part( 'includes/what-is-hatch' ); ?>
 
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/lib/response.min.js"></script>
-
 
 <?php get_footer(); ?>
