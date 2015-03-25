@@ -1,4 +1,4 @@
-<div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "pageDots": false }'>
+<div class="gallery js-flickity">
   <div class="gallery-cell">
     <div class="isotope">
       <a href="#" class="item">
