@@ -2,7 +2,7 @@
 
   <!-- Posts hero -->
   <section id="posts-hero" class="posts-hero">
-  
+    <div id="hero-loading" class="isLoaded"></div>
   </section>
 
   <div class="container">
