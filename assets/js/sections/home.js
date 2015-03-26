@@ -4,24 +4,27 @@
     
     'use strict';
 
-    var isLoaded = false;
+    function initiateFlickity()
+    {
+      $('.gallery').flickity({
+        freeScroll: false,
+        pageDots: false
+      });
+    }
 
     //Function to the css rule
     function checkSize(){
       switch( $(window).width() > 992 )
       {
         case true:
-          if(!isLoaded)
-          {
-            $('.js-flickity').flickity({
-              // options
-              freeScroll: false,
-              pageDots: false
-            });
-          };
 
           //Get template from localized data in function.php::223
-          $('#posts-hero').html(template.tile);
+          $('#posts-hero').html(template.tile).promise().done(function()
+          {
+
+              initiateFlickity();
+          
+          });
           
           //Do magic based on screen size
           if( $(window).width() >= 1200 )
@@ -38,15 +41,6 @@
                 gutter: 30
               }
             });
-            if(isLoaded)
-            {
-              $('.js-flickity').flickity({
-                // options
-                freeScroll: false,
-                pageDots: false
-              }).flickity('reloadCells');
-            }
-
           } else {
             $('.isotope').isotope({
               layoutMode: 'masonryHorizontal',
@@ -58,24 +52,12 @@
                 gutter: 30
               }
             });
-            if(isLoaded)
-            {
-              $('.js-flickity').flickity({
-                // options
-                freeScroll: false,
-                pageDots: false
-              }).flickity('reloadCells');
-            }
           }
           break;
         default:
           //If below 970 loat carousel from localized data in function.php::223
-          console.log('made it');
           $('#posts-hero').html(template.carousel);
       }
-      (function(){
-        isLoaded = true;
-      })();
     }
 
     // run test on initial page load
