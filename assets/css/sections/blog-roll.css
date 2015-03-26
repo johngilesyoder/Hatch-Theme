@@ -7561,6 +7561,7 @@ body {
 }
 .blog-sidebar .widget_categories ul li {
   display: inline-block;
+  margin-bottom: 8px;
 }
 .blog-sidebar .widget_categories ul li a {
   font-size: 13px;
