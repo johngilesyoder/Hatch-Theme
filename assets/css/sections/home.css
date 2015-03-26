@@ -6913,9 +6913,6 @@ fieldset[disabled] .btn-secondary.active {
 .site-footer .footer-main .footer-connect .footer-social-links a:last-child {
   margin-right: 0;
 }
-.site-footer .footer-main .footer-connect .footer-email .short-email {
-  display: none;
-}
 .site-footer .footer-main .footer-links {
   position: relative;
   min-height: 1px;
@@ -6953,14 +6950,6 @@ fieldset[disabled] .btn-secondary.active {
   color: #999999;
   font-size: 13px;
   padding: 20px 0;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .site-footer .footer-main .footer-connect .footer-email .short-email {
-    display: block;
-  }
-  .site-footer .footer-main .footer-connect .footer-email .long-email {
-    display: none;
-  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .site-footer .footer-main {
@@ -7928,9 +7917,6 @@ http://flickity.metafizzy.co
   }
 }
 @media (max-width: 767px) {
-  .posts-hero {
-    margin-bottom: 30px;
-  }
   .section-block {
     margin-bottom: 50px;
   }
