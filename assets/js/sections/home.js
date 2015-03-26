@@ -16,9 +16,8 @@
             $('.js-flickity').flickity({
               // options
               freeScroll: false,
-              contain: true,
               pageDots: false
-            }).flickity('reloadCells');
+            });
           };
 
           //Get template from localized data in function.php::223
@@ -44,7 +43,6 @@
               $('.js-flickity').flickity({
                 // options
                 freeScroll: false,
-                contain: true,
                 pageDots: false
               }).flickity('reloadCells');
             }
@@ -65,7 +63,6 @@
               $('.js-flickity').flickity({
                 // options
                 freeScroll: false,
-                contain: true,
                 pageDots: false
               }).flickity('reloadCells');
             }
