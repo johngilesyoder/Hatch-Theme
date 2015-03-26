@@ -4,18 +4,30 @@
     
     'use strict';
 
+    var isLoaded = false;
+
     //Function to the css rule
     function checkSize(){
       switch( $(window).width() > 992 )
       {
         case true:
-          //Get template from localized data in function.php::223
+          if(!isLoaded)
+          {
+            $('.js-flickity').flickity({
+              // options
+              freeScroll: false,
+              contain: true,
+              pageDots: false
+            }).flickity('reloadCells');
+          };
 
+          //Get template from localized data in function.php::223
           $('#posts-hero').html(template.tile);
           
           //Do magic based on screen size
-          if( $('.container').width() >= 1140 )
+          if( $(window).width() >= 1200 )
           {
+            
             // DOM ready, take it away
             $('.isotope').isotope({
               layoutMode: 'masonryHorizontal',
@@ -27,12 +39,16 @@
                 gutter: 30
               }
             });
-            $('.js-flickity').flickity({
-              // options
-              freeScroll: false,
-              contain: true,
-              pageDots: false
-            });
+            if(isLoaded)
+            {
+              $('.js-flickity').flickity({
+                // options
+                freeScroll: false,
+                contain: true,
+                pageDots: false
+              }).flickity('reloadCells');
+            }
+
           } else {
             $('.isotope').isotope({
               layoutMode: 'masonryHorizontal',
@@ -44,12 +60,15 @@
                 gutter: 30
               }
             });
-            $('.js-flickity').flickity({
-              // options
-              freeScroll: false,
-              contain: true,
-              pageDots: false
-            });
+            if(isLoaded)
+            {
+              $('.js-flickity').flickity({
+                // options
+                freeScroll: false,
+                contain: true,
+                pageDots: false
+              }).flickity('reloadCells');
+            }
           }
           break;
         default:
@@ -57,6 +76,9 @@
           console.log('made it');
           $('#posts-hero').html(template.carousel);
       }
+      (function(){
+        isLoaded = true;
+      })();
     }
 
     // run test on initial page load
