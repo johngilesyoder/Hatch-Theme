@@ -47,6 +47,20 @@ function hatch_get_carousel()
 }
 
 /*------------------------------------*\
+  Homepage Posts
+\*------------------------------------*/
+
+function hatch_home_pagesize( $query ) {
+    if ( is_home() )
+    {
+        $query->set( 'showposts', 14 );
+        return;
+    }
+}
+
+// add_action( 'pre_get_posts', 'hatch_home_pagesize', 1 );
+
+/*------------------------------------*\
   Theme Support
 \*------------------------------------*/
 
