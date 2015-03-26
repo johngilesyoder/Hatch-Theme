@@ -14,7 +14,7 @@
 
           //Get template from localized data in function.php::223
           $('#posts-hero').html(template.tile).promise().done(function(){
-            $('.js-flickity').flickity({
+            $('.gallery').flickity({
               // options
               freeScroll: false,
               contain: true,
@@ -53,11 +53,15 @@
           break;
         default:
           //If below 970 loat carousel from localized data in function.php::223
-          $('#posts-hero').html(template.carousel);
+          $('#posts-hero').html(template.carousel).promise().done(function(){
+            $('.main-gallery').flickity({
+              // options
+              freeScroll: false,
+              contain: true,
+              pageDots: false
+            });
+          });
       }
-      (function(){
-        isLoaded = true;
-      })();
     }
 
     // run test on initial page load
