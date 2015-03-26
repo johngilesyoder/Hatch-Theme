@@ -15,9 +15,9 @@
           {
             $('.js-flickity').flickity({
               // options
-              pageDots: false,
               freeScroll: false,
-              contain: true
+              contain: true,
+              pageDots: false
             }).flickity('reloadCells');
           };
 
@@ -43,9 +43,9 @@
             {
               $('.js-flickity').flickity({
                 // options
-                pageDots: false,
                 freeScroll: false,
-                contain: true
+                contain: true,
+                pageDots: false
               }).flickity('reloadCells');
             }
 
@@ -64,15 +64,16 @@
             {
               $('.js-flickity').flickity({
                 // options
-                pageDots: false,
                 freeScroll: false,
-                contain: true
+                contain: true,
+                pageDots: false
               }).flickity('reloadCells');
             }
           }
           break;
         default:
-          //If below 970 load carousel from localized data in function.php::223
+          //If below 970 loat carousel from localized data in function.php::223
+          console.log('made it');
           $('#posts-hero').html(template.carousel);
       }
       (function(){
