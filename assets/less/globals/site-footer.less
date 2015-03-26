@@ -24,7 +24,9 @@
         }
       }
       .footer-email {
-
+        .short-email {
+          display: none;
+        }
       }
     }
     .footer-links {
@@ -70,7 +72,24 @@
 @media (min-width: 1200px) {}
 
 // Desktop to large desktop
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .site-footer {
+    .footer-main {
+      .footer-connect {
+        .footer-email {
+          .short-email {
+            display: block;
+          }
+          .long-email {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+}
 
 // Tablet to desktop
 @media (min-width: 768px) and (max-width: 991px) {
