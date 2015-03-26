@@ -22,7 +22,7 @@
         </a>
         <?php $count++ ?>
     </div>
-
+    <p><?php echo $found_posts ?></p>
   <?php if( $count%7 == 0 || $count == $found_posts): ?>
       </div>
     </div>
