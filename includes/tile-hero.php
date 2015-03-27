@@ -20,13 +20,11 @@
         $thumb_url = $thumb_url_array[0];
         
         switch ($count%4) {
-          case 1:
+
+          case 2:
               echo "<a href='$permalink' class='item size2'>";
               break;
-          case 2:
-              echo "<a href='$permalink' class='item'>";
-              break;
-          case 3:
+          case 0:
               echo "<a href='$permalink' class='item size3'>";
               break;
           default:
