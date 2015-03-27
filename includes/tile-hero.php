@@ -2,7 +2,7 @@
 
 <div class="tile-carousel">
 
-  <?php if( $count == 1): ?>
+  <?php if( $count == 1 ): ?>
     <div class="gallery-cell">
       <div class="isotope">
   <?php endif; ?>
@@ -19,11 +19,14 @@
         $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
         $thumb_url = $thumb_url_array[0];
         
-        switch ($count%7) {
-          case 2:
+        switch ($count%4) {
+          case 1:
               echo "<a href='$permalink' class='item size2'>";
               break;
-          case 4:
+          case 2:
+              echo "<a href='$permalink' class='item'>";
+              break;
+          case 3:
               echo "<a href='$permalink' class='item size3'>";
               break;
           default:
@@ -39,6 +42,7 @@
           <article class="article-wrapper">
           <?php endif; ?>
             <div class="gradient-wrapper">
+              <?php echo $count%4 ?>
               <hgroup>
                 <h2 class="post-author"><?php the_author(); ?></h2>
                 <h1 class="post-title"><?php the_title(); ?></h1>
@@ -46,9 +50,13 @@
             </div>
           </article>
         </a>
-  <?php if( $count == $wp_query->post_count || $count%7 == 0): ?>
+  <?php if( $count == $wp_query->post_count || $count%4 == 0): ?>
+      </div>
     </div>
-  </div>
+    <?php if( $count < $wp_query->post_count): ?>
+      <div class="gallery-cell">
+          <div class="isotope">
+    <?php endif; ?>
   <?php endif; ?>
         <?php $count++ ?>
   <?php endwhile; else : ?>
