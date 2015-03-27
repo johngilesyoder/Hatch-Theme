@@ -11,7 +11,7 @@
       switch( $(window).width() > 992 )
       {
         case true:
-
+          console.log('big screen');
           //Get template from localized data in function.php::223
           $('#posts-hero').html(template.tile).promise().done(function(){
             $('.gallery').flickity({
@@ -52,14 +52,14 @@
           }
           break;
         default:
-          //If below 970 loat carousel from localized data in function.php::223
+          console.log('small screen');
+          //If below 992 loat carousel from localized data in function.php::223
+
           $('#posts-hero').html(template.carousel).promise().done(function(){
             $('.main-gallery').flickity({
-              // options
-              freeScroll: false,
-              contain: true,
-              pageDots: false
-            });
+              pageDots: false,
+              setGallerySize: false
+            }).flickity('reloadCells');
           });
       }
     }

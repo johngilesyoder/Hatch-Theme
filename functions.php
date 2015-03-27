@@ -225,7 +225,7 @@ function html5blank_conditional_scripts()
 
 
 
-        wp_register_script('home', get_template_directory_uri() . '/assets/js/sections/home.js', array(), null, false ); // Home scripts
+        wp_register_script('home', get_template_directory_uri() . '/assets/js/sections/home.js', array(), null, true ); // Home scripts
         
         // Create array to pass to the localization script (below)
         $translation_array = array(
