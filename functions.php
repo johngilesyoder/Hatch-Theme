@@ -12,6 +12,55 @@
 // Load any external files you have here
 
 /*------------------------------------*\
+  Home AJAX Support
+\*------------------------------------*/
+function hatch_get_tiles()
+{
+    //start output buffering
+    ob_start();
+
+    get_template_part( 'includes/tile-hero' );
+
+    //get the contents in a string that JavaScript can use
+    $tiles = ob_get_contents();
+
+    //clean everything up to preserve memory.
+    ob_end_clean();
+
+    return $tiles;
+}
+
+function hatch_get_carousel()
+{
+    //start output buffering
+    ob_start();
+
+    get_template_part( 'includes/carousel-hero' );
+
+    //get the contents in a string that JavaScript can use
+    $carousel = ob_get_contents();
+
+    //clean everything up to preserve memory.
+    ob_end_clean();
+
+    return $carousel;
+}
+
+/*------------------------------------*\
+  Homepage Posts
+\*------------------------------------*/
+
+function hatch_home_pagesize( $query ) {
+    if ( is_home() )
+    {
+        $query->set( 'showposts', 14 );
+        return;
+    }
+}
+
+// add_action( 'pre_get_posts', 'hatch_home_pagesize', 1 );
+
+/*------------------------------------*\
   Theme Support
 \*------------------------------------*/
 
@@ -176,7 +225,16 @@ function html5blank_conditional_scripts()
 
 
 
-        wp_register_script('home', get_template_directory_uri() . '/assets/js/sections/home.js', array(), null, false ); // Home scripts
+        wp_register_script('home', get_template_directory_uri() . '/assets/js/sections/home.js', array(), null, true ); // Home scripts
+        
+        // Create array to pass to the localization script (below)
+        $translation_array = array(
+            'tile' => hatch_get_tiles(),
+            'carousel' => hatch_get_carousel()
+        );
+        
+        // Make template markup available to JavaScript as an object
+        wp_localize_script( 'home', 'template', $translation_array );
         wp_enqueue_script('home'); // Enqueue it!
     
     }
@@ -444,6 +502,7 @@ function html5blankcomments($comment, $args, $depth)
 
 // Add Actions
 add_action('init', 'html5blank_header_scripts'); // Add Custom Scripts to wp_head
+add_action('init', 'hatch_localize_script'); // Localize script for the AJAX url
 add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditional Page Scripts
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet

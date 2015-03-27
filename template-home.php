@@ -2,9 +2,103 @@
 
   <!-- Posts hero -->
   <section id="posts-hero" class="posts-hero">
-    <?php get_template_part( 'includes/tile-hero' ); ?>
-    <?php //get_template_part( 'includes/carousel-hero' ); ?>
+    <div id="hero-loading" class="isLoaded"></div>
   </section>
+
+  <!-- <section class="posts-hero" id="posts-hero">
+    <div class="tile-carousel">
+    
+      <div class="gallery-cell">
+        <div class="isotope">
+          <a class="item" href="http://hatch.dev/test-post-6/">
+            <article class="article-wrapper">
+              <div class="gradient-wrapper">
+                <hgroup>
+                  <h2 class="post-author">admin</h2>
+                  <h1 class="post-title">Test Post 6</h1>
+                </hgroup>
+              </div>
+            </article>
+          </a>
+          <a class="item size2" href="http://hatch.dev/test-post-5/">
+            <article class="article-wrapper">
+              <div class="gradient-wrapper">
+                <hgroup>
+                  <h2 class="post-author">admin</h2>
+                  <h1 class="post-title">Test Post 5</h1>
+                </hgroup>
+              </div>
+            </article>
+          </a>
+          <a class="item" href="http://hatch.dev/test-post-4/">
+            <article class="article-wrapper">
+              <div class="gradient-wrapper">
+                <hgroup>
+                  <h2 class="post-author">admin</h2>
+                  <h1 class="post-title">Test Post 4</h1>
+                </hgroup>
+              </div>
+            </article>
+          </a>
+          <a class="item size3" href="http://hatch.dev/test-post-3/">
+            <article class="article-wrapper">
+              <div class="gradient-wrapper">
+                <hgroup>
+                  <h2 class="post-author">admin</h2>
+                  <h1 class="post-title">Test Post 3</h1>
+                </hgroup>
+              </div>
+            </article>
+          </a>
+        </div>
+      </div>
+
+      <div class="gallery-cell">
+        <div class="isotope">
+          <a class="item" href="http://hatch.dev/test-post-2/">
+            <article class="article-wrapper">
+              <div class="gradient-wrapper">
+                <hgroup>
+                  <h2 class="post-author">admin</h2>
+                  <h1 class="post-title">Test Post 2</h1>
+                </hgroup>
+              </div>
+            </article>
+          </a>
+          <a class="item size2" href="http://hatch.dev/test-post-1/">
+            <article class="article-wrapper">
+              <div class="gradient-wrapper">
+                <hgroup>
+                  <h2 class="post-author">admin</h2>
+                  <h1 class="post-title">Test Post 1</h1>
+                </hgroup>
+              </div>
+            </article>
+          </a>
+          <a class="item" href="http://hatch.dev/david-yakos-inventor-of-things/">
+            <article class="article-wrapper" style="background-image:url('http://hatch.dev/wp-content/uploads/2015/03/Print-67.jpg');">
+              <div class="gradient-wrapper">
+                <hgroup>
+                  <h2 class="post-author">admin</h2>
+                  <h1 class="post-title">David Yakos. Inventor of Things</h1>
+                </hgroup>
+              </div>
+            </article>
+          </a>
+          <a class="item size3" href="http://hatch.dev/entrepreneur-partners-with-digital-design-agency/">
+            <article class="article-wrapper" style="background-image:url('http://hatch.dev/wp-content/uploads/2015/02/fake-post-img.png');">
+              <div class="gradient-wrapper">
+                <hgroup>
+                  <h2 class="post-author">admin</h2>
+                  <h1 class="post-title">Entrepreneur partners with digital design agency</h1>
+                </hgroup>
+              </div>
+            </article>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section> -->
 
   <div class="container">
     <!-- Conference -->

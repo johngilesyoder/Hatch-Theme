@@ -35,10 +35,7 @@
 
 	</head>
 
-	<body <?php body_class(); ?> data-responsejs='{
-"create": [
-    { "prop":"width", "prefix": "min-width-", "lazy":true }
-]}'>
+	<body <?php body_class(); ?>>
 
     <!-- Topbar -->
     <?php get_template_part( 'includes/topbar' ); ?>

@@ -9,7 +9,7 @@
 		      				<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-footer-facebook.svg"></a>
 		      				<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-footer-instagram.svg"></a>
 		      			</div>
-		      			<a href="mailto:hatchinfo@hatchexperience.org" class="footer-email">hatchinfo@hatchexperience.org</a>
+		      			<a href="mailto:hatchinfo@hatchexperience.org" class="footer-email"><span class="long-email">hatchinfo@hatchexperience.org</span><span class="short-email">Email us</span></a>
 		      		</div>
 		      		<div class="footer-links">
 		      			<nav class="links-column">
