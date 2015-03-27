@@ -1,6 +1,6 @@
 <?php $count = 1; ?>
 
-<div class="gallery">
+<div class="tile-carousel">
 
   <?php if( $count == 1): ?>
     <div class="gallery-cell">
@@ -8,11 +8,11 @@
   <?php endif; ?>
 
     
-      <?php query_posts( 'post_count=14' ); ?>
+      <?php query_posts( 'post_count=8' ); ?>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <?php
 
-        switch ($count%7) {
+        switch ($count%4) {
           case 2:
               echo '<a href="#" class="item size2">';
               break;
@@ -35,7 +35,7 @@
             </div>
           </article>
         </a>
-  <?php if( $count == $wp_query->post_count || $count%7 == 0): ?>
+  <?php if( $count == $wp_query->post_count || $count%4 == 0): ?>
     </div>
   </div>
   <?php endif; ?>

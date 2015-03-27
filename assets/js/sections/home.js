@@ -6,6 +6,11 @@
 
     var isLoaded = false;
 
+    $('.mobile-carousel').flickity({
+      cellAlign: 'left',
+      contain: true
+    }).flickity('reloadCells');
+
     //Function to the css rule
     function checkSize(){
       switch( $(window).width() > 992 )
@@ -14,11 +19,11 @@
           console.log('big screen');
           //Get template from localized data in function.php::223
           $('#posts-hero').html(template.tile).promise().done(function(){
-            $('.gallery').flickity({
-              // options
+            $('.tile-carousel').flickity({
               freeScroll: false,
               contain: true,
-              pageDots: false
+              pageDots: false,
+              setGallerySize: false
             }).flickity('reloadCells');
           });
           
@@ -26,12 +31,10 @@
           if( $(window).width() >= 1200 )
           {
             
-            // DOM ready, take it away
             $('.isotope').isotope({
               layoutMode: 'masonryHorizontal',
               itemSelector: '.item',
               resizable: false,
-              //sortBy: 'random',
               masonryHorizontal: {
                 rowHeight: 144,
                 gutter: 30
@@ -43,7 +46,6 @@
               layoutMode: 'masonryHorizontal',
               itemSelector: '.item',
               resizable: false,
-              //sortBy: 'random',
               masonryHorizontal: {
                 rowHeight: 111,
                 gutter: 30
@@ -53,10 +55,12 @@
           break;
         default:
           console.log('small screen');
-          //If below 992 loat carousel from localized data in function.php::223
+          //If below 992 load carousel from localized data in function.php::223
 
           $('#posts-hero').html(template.carousel).promise().done(function(){
-            $('.main-gallery').flickity({
+            $('.mobile-carousel').flickity({
+              imagesLoaded: true,
+              autoPlay: 4000,
               pageDots: false,
               setGallerySize: false
             }).flickity('reloadCells');

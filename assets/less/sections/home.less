@@ -49,6 +49,12 @@
   .clearfix();
   padding: 30px;
   background: @gray-bg;
+  .tile-carousel {
+    height: 492px;
+    .gallery-cell {
+      height: 100%;
+    }
+  }
   .isotope {
     height: 492px;
     .clearfix();
@@ -346,6 +352,9 @@
     .isotope {
       height: 393px;
     }
+    .tile-carousel {
+      height: 393px;
+    }
     .item {
       width: 205px;
       height: 111px;
@@ -381,6 +390,54 @@
 
 // Tablet to desktop
 @media (min-width: 768px) and (max-width: 991px) {
+
+  .posts-hero {
+    margin-bottom: 30px;
+    padding: 0;
+    border: 0;
+    .mobile-carousel {
+      height: 450px;
+      .gallery-cell {
+        width: 100%;
+        article {
+          display: block;
+          width: auto;
+          height: 100%;
+          background-size: cover;
+          background-position: 50% 50%;
+          .article-wrapper {
+            background-size: cover;
+            background-position: 50% 50%;
+            height: 100%;
+            color: #fff;
+            display: block;
+          }
+          .gradient-wrapper {
+            height: 100%;
+            #gradient > .vertical(rgba(0,0,0,.0001), rgba(0,0,0,1), 40%, 100%);
+          }
+          hgroup {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+          }
+          .post-author {
+            font-family: @font-family-archer;
+            font-style: italic;
+            font-size: 16px;
+            margin: 0 0 4px;
+            font-weight: 600;
+          }
+          .post-title {
+            font-size: 24px;
+            font-family: @font-family-tungsten;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
 
   .section-conference {
     .conference-photo {
@@ -435,6 +492,50 @@
 
   .posts-hero {
     margin-bottom: 30px;
+    padding: 0;
+    border: 0;
+    .mobile-carousel {
+      height: 450px;
+      .gallery-cell {
+        width: 100%;
+        article {
+          display: block;
+          width: auto;
+          height: 100%;
+          background-size: cover;
+          background-position: 50% 50%;
+          .article-wrapper {
+            background-size: cover;
+            background-position: 50% 50%;
+            height: 100%;
+            color: #fff;
+            display: block;
+          }
+          .gradient-wrapper {
+            height: 100%;
+            #gradient > .vertical(rgba(0,0,0,.0001), rgba(0,0,0,1), 40%, 100%);
+          }
+          hgroup {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+          }
+          .post-author {
+            font-family: @font-family-archer;
+            font-style: italic;
+            font-size: 16px;
+            margin: 0 0 4px;
+            font-weight: 600;
+          }
+          .post-title {
+            font-size: 24px;
+            font-family: @font-family-tungsten;
+            margin: 0;
+          }
+        }
+      }
+    }
   }
   .section-block {
     margin-bottom: 50px;
@@ -523,4 +624,13 @@
 }
 
 // Up to landscape phone
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+
+  .posts-hero {
+    /* gallery height */
+    .mobile-carousel {
+      height: 350px;
+    }
+  }
+
+}

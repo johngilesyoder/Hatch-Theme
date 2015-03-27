@@ -7539,6 +7539,12 @@ http://flickity.metafizzy.co
 .posts-hero:after {
   clear: both;
 }
+.posts-hero .tile-carousel {
+  height: 492px;
+}
+.posts-hero .tile-carousel .gallery-cell {
+  height: 100%;
+}
 .posts-hero .isotope {
   height: 492px;
 }
@@ -7873,6 +7879,9 @@ http://flickity.metafizzy.co
   .posts-hero .isotope {
     height: 393px;
   }
+  .posts-hero .tile-carousel {
+    height: 393px;
+  }
   .posts-hero .item {
     width: 205px;
     height: 111px;
@@ -7897,6 +7906,56 @@ http://flickity.metafizzy.co
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .posts-hero {
+    margin-bottom: 30px;
+    padding: 0;
+    border: 0;
+  }
+  .posts-hero .mobile-carousel {
+    height: 450px;
+  }
+  .posts-hero .mobile-carousel .gallery-cell {
+    width: 100%;
+  }
+  .posts-hero .mobile-carousel .gallery-cell article {
+    display: block;
+    width: auto;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .posts-hero .mobile-carousel .gallery-cell article .article-wrapper {
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 100%;
+    color: #fff;
+    display: block;
+  }
+  .posts-hero .mobile-carousel .gallery-cell article .gradient-wrapper {
+    height: 100%;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.0001) 40%, #000000 100%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0001) 40%, #000000 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#ff000000', GradientType=0);
+  }
+  .posts-hero .mobile-carousel .gallery-cell article hgroup {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+  }
+  .posts-hero .mobile-carousel .gallery-cell article .post-author {
+    font-family: 'Archer SSm A', 'Archer SSm B';
+    font-style: italic;
+    font-size: 16px;
+    margin: 0 0 4px;
+    font-weight: 600;
+  }
+  .posts-hero .mobile-carousel .gallery-cell article .post-title {
+    font-size: 24px;
+    font-family: 'Tungsten A', 'Tungsten B';
+    margin: 0;
+  }
   .section-conference .conference-photo {
     margin-bottom: 30px;
   }
@@ -7930,6 +7989,53 @@ http://flickity.metafizzy.co
 @media (max-width: 767px) {
   .posts-hero {
     margin-bottom: 30px;
+    padding: 0;
+    border: 0;
+  }
+  .posts-hero .mobile-carousel {
+    height: 450px;
+  }
+  .posts-hero .mobile-carousel .gallery-cell {
+    width: 100%;
+  }
+  .posts-hero .mobile-carousel .gallery-cell article {
+    display: block;
+    width: auto;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .posts-hero .mobile-carousel .gallery-cell article .article-wrapper {
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 100%;
+    color: #fff;
+    display: block;
+  }
+  .posts-hero .mobile-carousel .gallery-cell article .gradient-wrapper {
+    height: 100%;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.0001) 40%, #000000 100%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0001) 40%, #000000 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#ff000000', GradientType=0);
+  }
+  .posts-hero .mobile-carousel .gallery-cell article hgroup {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+  }
+  .posts-hero .mobile-carousel .gallery-cell article .post-author {
+    font-family: 'Archer SSm A', 'Archer SSm B';
+    font-style: italic;
+    font-size: 16px;
+    margin: 0 0 4px;
+    font-weight: 600;
+  }
+  .posts-hero .mobile-carousel .gallery-cell article .post-title {
+    font-size: 24px;
+    font-family: 'Tungsten A', 'Tungsten B';
+    margin: 0;
   }
   .section-block {
     margin-bottom: 50px;
@@ -7999,6 +8105,14 @@ http://flickity.metafizzy.co
   }
   .section-partners {
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .posts-hero {
+    /* gallery height */
+  }
+  .posts-hero .mobile-carousel {
+    height: 350px;
   }
 }
 /*# sourceMappingURL=home.css.map */
