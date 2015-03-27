@@ -114,30 +114,6 @@ if (function_exists('add_theme_support'))
 // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');
 
-// HTML5 Blank navigation
-function html5blank_nav()
-{
-  wp_nav_menu(
-  array(
-    'theme_location'  => 'sidebar-menu',
-    'menu'            => '',
-    'container'       => 'div',
-    'container_class' => 'menu-{menu slug}-container',
-    'container_id'    => '',
-    'menu_class'      => 'menu',
-    'menu_id'         => '',
-    'echo'            => true,
-    'fallback_cb'     => 'wp_page_menu',
-    'before'          => '',
-    'after'           => '',
-    'link_before'     => '',
-    'link_after'      => '',
-    'items_wrap'      => '<ul>%3$s</ul>',
-    'depth'           => ''
-    )
-  );
-}
-
 // Bootstrap primary navigation
 function primary_nav()
 {
@@ -163,29 +139,38 @@ function primary_nav()
     );
 }
 
-// Bootstrap primary navigation
-function footer_nav()
+
+function get_menu_by_location( $location ) 
 {
-    wp_nav_menu(
-    array(
-        'theme_location'  => 'footer-menu',
-        'menu'            => '',
-        'container'       => false,
-        'container_class' => 'menu-{menu slug}-container',
-        'container_id'    => '',
-        'menu_class'      => 'menu',
-        'menu_id'         => '',
-        'echo'            => true,
-        'fallback_cb'     => 'wp_page_menu',
-        'before'          => '',
-        'after'           => '',
-        'link_before'     => '',
-        'link_after'      => '',
-        'items_wrap'      => '<ul>%3$s</ul>',
-        'depth'           => ''
-        )
-    );
+    if( empty($location) ) return false;
+    $locations = get_nav_menu_locations();
+    if( ! isset( $locations[$location] ) ) return false;
+    $menu_obj = get_term( $locations[$location], 'nav_menu' );
+    return $menu_obj;
 }
+
+function footer_links_1() {
+    $location = 'footer-links-1';
+    get_menu_by_location( $location );
+    $menu_obj = get_menu_by_location( $location );
+    wp_nav_menu( array('theme_location' => $location, 'items_wrap'=> '<h3 class="links-header">'.esc_html($menu_obj->name).'</h3><ul id=\"%1$s\" class=\"%2$s\">%3$s</ul>') ); 
+}
+
+function footer_links_2() {
+    $location = 'footer-links-2';
+    get_menu_by_location( $location );
+    $menu_obj = get_menu_by_location( $location );
+    wp_nav_menu( array('theme_location' => $location, 'items_wrap'=> '<h3 class="links-header">'.esc_html($menu_obj->name).'</h3><ul id=\"%1$s\" class=\"%2$s\">%3$s</ul>') ); 
+}
+
+function footer_links_3() {
+    $location = 'footer-links-3';
+    get_menu_by_location( $location );
+    $menu_obj = get_menu_by_location( $location );
+    wp_nav_menu( array('theme_location' => $location, 'items_wrap'=> '<h3 class="links-header">'.esc_html($menu_obj->name).'</h3><ul id=\"%1$s\" class=\"%2$s\">%3$s</ul>') ); 
+}
+
+
 
 // Load HTML5 Blank scripts (header.php)
 function html5blank_header_scripts()
@@ -287,9 +272,10 @@ function html5blank_conditional_styles()
 function register_html5_menu()
 {
     register_nav_menus(array( // Using array to specify more menus if needed
-        'header-menu' => __('Header Menu', 'primary'), // Main Navigation
-        'sidebar-menu' => __('Sidebar Menu', 'html5blank'), // Sidebar Navigation
-        'footer-menu' => __('Footer Menu', 'footer') // Extra Navigation if needed (duplicate as many as you need!)
+        'header-menu' => __('Header Menu', 'primary'),
+        'footer-links-1' => __('Footer Links 1', 'footer-links-one'),
+        'footer-links-2' => __('Footer Links 2', 'footer-links-two'),
+        'footer-links-3' => __('Footer Links 3', 'footer-links-three')
     ));
 }
 

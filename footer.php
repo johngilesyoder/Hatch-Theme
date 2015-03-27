@@ -13,33 +13,13 @@
 		      		</div>
 		      		<div class="footer-links">
 		      			<nav class="links-column">
-		      				<h3 class="links-header">About</h3>
-		      				<ul>
-		      					<li><a href="#">What is HATCH?</a></li>
-		      					<li><a href="#">360 Mentorship</a></li>
-		      					<li><a href="#">Creativity</a></li>
-		      					<li><a href="#">The HATCH Network</a></li>
-		      					<li><a href="#">Groundbreakers</a></li>
-		      					<li><a href="#">The Future of HATCH</a></li>
-		      				</ul>
+		      				<?php footer_links_1(); ?>
 		      			</nav>
 		      			<nav class="links-column">
-		      				<h3 class="links-header">Conference</h3>
-		      				<ul>
-		      					<li><a href="#">HATCH 12 Info</a></li>
-		      					<li><a href="#">Tesimonials</a></li>
-		      					<li><a href="#">Media</a></li>
-		      					<li><a href="#">Montana</a></li>
-		      					<li><a href="#">Apply For an Invite</a></li>
-		      				</ul>
+		      				<?php footer_links_2(); ?>
 		      			</nav>
 		      			<nav class="links-column">
-		      				<h3 class="links-header">Partners</h3>
-		      				<ul>
-		      					<li><a href="#">Our Partners</a></li>
-		      					<li><a href="#">Intel</a></li>
-		      					<li><a href="#">Become a Partner</a></li>
-		      				</ul>
+		      				<?php footer_links_3(); ?>
 		      			</nav>
 		      		</div>
 		      	</div>

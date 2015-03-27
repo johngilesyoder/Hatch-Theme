@@ -6964,7 +6964,7 @@ fieldset[disabled] .btn-secondary.active {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .site-footer .footer-main {
-    padding: 30px 0;
+    padding: 30px 0 40px;
   }
   .site-footer .footer-main .footer-connect {
     margin-bottom: 50px;
@@ -6982,7 +6982,7 @@ fieldset[disabled] .btn-secondary.active {
 }
 @media (max-width: 767px) {
   .site-footer .footer-main {
-    padding: 30px 0 20px;
+    padding: 30px 0;
   }
   .site-footer .footer-main .footer-connect {
     margin-bottom: 50px;
