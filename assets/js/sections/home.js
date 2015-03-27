@@ -6,21 +6,14 @@
 
     var isLoaded = false;
 
-    $('.mobile-carousel').flickity({
-      cellAlign: 'left',
-      contain: true
-    }).flickity('reloadCells');
-
     //Function to the css rule
     function checkSize(){
       switch( $(window).width() > 992 )
       {
         case true:
-          console.log('big screen');
           //Get template from localized data in function.php::223
           $('#posts-hero').html(template.tile).promise().done(function(){
             $('.tile-carousel').flickity({
-              freeScroll: false,
               contain: true,
               pageDots: false,
               setGallerySize: false
@@ -34,7 +27,6 @@
             $('.isotope').isotope({
               layoutMode: 'masonryHorizontal',
               itemSelector: '.item',
-              resizable: false,
               masonryHorizontal: {
                 rowHeight: 144,
                 gutter: 30
@@ -45,7 +37,6 @@
             $('.isotope').isotope({
               layoutMode: 'masonryHorizontal',
               itemSelector: '.item',
-              resizable: false,
               masonryHorizontal: {
                 rowHeight: 111,
                 gutter: 30
@@ -54,7 +45,6 @@
           }
           break;
         default:
-          console.log('small screen');
           //If below 992 load carousel from localized data in function.php::223
 
           $('#posts-hero').html(template.carousel).promise().done(function(){

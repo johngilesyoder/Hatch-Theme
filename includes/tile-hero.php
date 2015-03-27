@@ -4,7 +4,7 @@
 
   <?php if( $count == 1 ): ?>
     <div class="gallery-cell">
-      <div class="isotope">
+        <div class="isotope">
   <?php endif; ?>
 
     
@@ -40,7 +40,7 @@
           <article class="article-wrapper">
           <?php endif; ?>
             <div class="gradient-wrapper">
-              <?php echo $count%4 ?>
+              <?php //echo $count%4 ?>
               <hgroup>
                 <h2 class="post-author"><?php the_author(); ?></h2>
                 <h1 class="post-title"><?php the_title(); ?></h1>
@@ -50,6 +50,7 @@
         </a>
   <?php if( $count == $wp_query->post_count || $count%4 == 0): ?>
       </div>
+     
     </div>
     <?php if( $count < $wp_query->post_count): ?>
       <div class="gallery-cell">
