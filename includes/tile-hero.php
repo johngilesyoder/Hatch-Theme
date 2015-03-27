@@ -12,25 +12,36 @@
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <?php
 
+        // post permalinks
+        $permalink = get_permalink();
+        // featured image
+        $thumb_id = get_post_thumbnail_id();
+        $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+        $thumb_url = $thumb_url_array[0];
+        
         switch ($count%7) {
           case 2:
-              echo '<a href="#" class="item size2">';
+              echo "<a href='$permalink' class='item size2'>";
               break;
           case 4:
-              echo '<a href="#" class="item size3">';
+              echo "<a href='$permalink' class='item size3'>";
               break;
           default:
-              echo '<a href="#" class="item">';
+              echo "<a href='$permalink' class='item'>";
               break;
         }
 
         ?>
-        
-          <article class="article-wrapper" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/img/fake-post-img.png');">
+          
+          <?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
+          <article class="article-wrapper" style="background-image:url('<?php echo $thumb_url ?>');">
+          <?php else: ?>
+          <article class="article-wrapper">
+          <?php endif; ?>
             <div class="gradient-wrapper">
               <hgroup>
-                <h2 class="post-author"><?php echo $count ?></h2>
-                <h1 class="post-title"><?php echo the_title(); ?></h1>
+                <h2 class="post-author"><?php the_author(); ?></h2>
+                <h1 class="post-title"><?php the_title(); ?></h1>
               </hgroup>
             </div>
           </article>

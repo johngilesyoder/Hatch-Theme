@@ -7451,7 +7451,8 @@ body {
     padding-bottom: 30px;
   }
   .post.type-post .post-title {
-    font-size: 32px;
+    font-size: 42px;
+    line-height: 1em;
   }
   .post.type-post .post-title .icon-external-link {
     top: 0;

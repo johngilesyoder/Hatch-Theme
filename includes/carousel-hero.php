@@ -6,7 +6,12 @@
     $thumb_url = $thumb_url_array[0];
   ?>
 	<div class="gallery-cell">
+    <a href="<?php the_permalink(); ?>">
+      <?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
       <article class="article-wrapper" style="background-image:url('<?php echo $thumb_url ?>');">
+      <?php else: ?>
+      <article class="article-wrapper">
+      <?php endif; ?>
         <div class="gradient-wrapper">
           <hgroup>
             <h2 class="post-author"><?php the_author(); ?> </h2>
@@ -14,6 +19,7 @@
           </hgroup>
         </div>
       </article>
+    </a>
   </div>
   <?php endwhile; ?>
 
