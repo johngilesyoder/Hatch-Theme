@@ -8032,9 +8032,9 @@ http://flickity.metafizzy.co
   }
   .posts-hero .mobile-carousel .gallery-cell article hgroup {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
   }
   .posts-hero .mobile-carousel .gallery-cell article hgroup h1,
   .posts-hero .mobile-carousel .gallery-cell article hgroup h2 {
@@ -8131,6 +8131,11 @@ http://flickity.metafizzy.co
   }
   .posts-hero .mobile-carousel {
     height: 350px;
+  }
+  .posts-hero .mobile-carousel .gallery-cell article hgroup {
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
   }
 }
 /*# sourceMappingURL=home.css.map */
