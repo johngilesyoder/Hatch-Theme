@@ -244,13 +244,13 @@ function html5blank_conditional_styles()
     } elseif ( is_page( 'the-experience') ) {
         wp_register_style('experience', get_template_directory_uri() . '/assets/css/sections/experience.css', array(), '1.0', 'all');
         wp_enqueue_style('experience'); // Enqueue it!
-    } elseif ( is_page( 'talk-to-us') ) {
+    } elseif ( is_page('talk-to-us') ) {
         wp_register_style('contact', get_template_directory_uri() . '/assets/css/sections/contact.css', array(), '1.0', 'all');
         wp_enqueue_style('contact'); // Enqueue it!
     } elseif ( is_page() ) {
         wp_register_style('page', get_template_directory_uri() . '/assets/css/sections/page.css', array(), '1.0', 'all');
         wp_enqueue_style('page'); // Enqueue it!
-    } elseif ( is_single() ) {
+    } elseif ( is_singular( 'post' ) ) {
         wp_register_style('single', get_template_directory_uri() . '/assets/css/sections/single.css', array(), '1.0', 'all');
         wp_enqueue_style('single'); // Enqueue it!
     } elseif ( is_category() ) {
@@ -265,6 +265,9 @@ function html5blank_conditional_styles()
     } elseif ( is_404() ) {
        wp_register_style('404', get_template_directory_uri() . '/assets/css/sections/404.css', array(), '1.0', 'all');
        wp_enqueue_style('404'); // Enqueue it!
+    } else {
+       wp_register_style('page', get_template_directory_uri() . '/assets/css/sections/page.css', array(), '1.0', 'all');
+       wp_enqueue_style('page'); // Enqueue it!
     }
 }
 
@@ -763,5 +766,24 @@ function SearchFilter($query) {
  
 add_filter('pre_get_posts','SearchFilter');
 
+
+/**
+ * return the featured image html to an event (within the loop automatically will get event ID)
+ *
+ * @param int    $post_id
+ * @param string $size
+ * @param bool   $link
+ *
+ * @return string
+ */
+function hatch_tribe_event_featured_image( $post_id = null, $size = 'full', $link = true ) {
+    if ( is_null( $post_id ) ) {
+        $post_id = get_the_ID();
+    }
+    $image_src      = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), $size );
+    $featured_image = $image_src[0];
+
+    return apply_filters( 'hatch_tribe_event_featured_image', $featured_image, $post_id, $size, $image_src );
+}
 
 ?>

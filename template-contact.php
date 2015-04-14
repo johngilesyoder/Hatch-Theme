@@ -40,7 +40,6 @@
           <div class="inquiry-contact">
             <div class="inquiry-wrapper">
               <h2>Contact Us</h2>
-              <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper.</p>
               <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 5 ); } ?>
             </div>
           </div>

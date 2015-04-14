@@ -7287,10 +7287,12 @@ body {
     font-size: 24px;
   }
 }
-.post {
+.post,
+.type-tribe_events {
   position: relative;
 }
-.post .post-format {
+.post .post-format,
+.type-tribe_events .post-format {
   position: absolute;
   top: 0;
   left: -77px;
@@ -7302,7 +7304,8 @@ body {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
-.post .post-format .format-icon {
+.post .post-format .format-icon,
+.type-tribe_events .post-format .format-icon {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -7310,21 +7313,25 @@ body {
           transform: translateY(-50%);
   display: inline-block;
 }
-.post.category-becauseofhatch .post-format {
+.post.category-becauseofhatch .post-format,
+.type-tribe_events.category-becauseofhatch .post-format {
   background: #FFF8F2;
   border: 2px solid #F2AE79;
 }
-.post.category-becauseofhatch .post-format .format-icon {
+.post.category-becauseofhatch .post-format .format-icon,
+.type-tribe_events.category-becauseofhatch .post-format .format-icon {
   background-image: url('../../img/post-format-because-of-hatch.svg');
   height: 30px;
   width: 23px;
 }
-.post.type-post {
+.post.type-post,
+.type-tribe_events {
   margin-bottom: 50px;
   border-bottom: 1px solid #e6e6e6;
   padding-bottom: 50px;
 }
-.post.type-post .post-title {
+.post.type-post .post-title,
+.type-tribe_events .post-title {
   margin: 0 0 3px;
   font-family: 'Tungsten A', 'Tungsten B';
   font-size: 42px;
@@ -7332,40 +7339,47 @@ body {
   text-transform: uppercase;
   letter-spacing: .01em;
 }
-.post.type-post .post-title a {
+.post.type-post .post-title a,
+.type-tribe_events .post-title a {
   color: #252C33;
 }
-.post.type-post .post-title .icon-external-link {
+.post.type-post .post-title .icon-external-link,
+.type-tribe_events .post-title .icon-external-link {
   margin-left: 10px;
   top: 2px;
   position: relative;
 }
-.post.type-post .post-meta {
+.post.type-post .post-meta,
+.type-tribe_events .post-meta {
   font-family: 'Archer SSm A', 'Archer SSm B';
   font-weight: 600;
   font-style: italic;
   font-size: 13px;
   margin-bottom: 20px;
 }
-.post.type-post .wp-post-image {
+.post.type-post .wp-post-image,
+.type-tribe_events .wp-post-image {
   display: block;
   max-width: 100%;
   height: auto;
   margin-bottom: 30px;
 }
-.post.type-post .post-excerpt {
+.post.type-post .post-excerpt,
+.type-tribe_events .post-excerpt {
   color: #555;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 30px;
 }
-.post.type-post .post-content {
+.post.type-post .post-content,
+.type-tribe_events .post-content {
   margin-bottom: 50px;
   color: #555;
   font-size: 16px;
   line-height: 24px;
 }
-.post.type-post .btn-continue {
+.post.type-post .btn-continue,
+.type-tribe_events .btn-continue {
   color: #007da3;
   border-radius: 36px;
   line-height: 36px;
@@ -7373,15 +7387,18 @@ body {
   border-radius: 18px;
   border-color: #d9d9d9;
 }
-.post.type-post .btn-continue:hover {
+.post.type-post .btn-continue:hover,
+.type-tribe_events .btn-continue:hover {
   background: #007da3;
   border-color: #007da3;
   color: #fff;
 }
-.post.type-post .share-post {
+.post.type-post .share-post,
+.type-tribe_events .share-post {
   margin-bottom: 20px;
 }
-.post.type-post .share-post .like-button {
+.post.type-post .share-post .like-button,
+.type-tribe_events .share-post .like-button {
   display: inline-block;
   margin-right: 15px;
   vertical-align: top;
@@ -7389,7 +7406,8 @@ body {
   top: -4px;
   margin-top: 3px;
 }
-.post.type-post .share-post .tweet-button {
+.post.type-post .share-post .tweet-button,
+.type-tribe_events .share-post .tweet-button {
   display: inline-block;
   margin-right: 15px;
   vertical-align: top;

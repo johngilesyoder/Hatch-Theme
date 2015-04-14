@@ -65,34 +65,37 @@
       <div class="section-header">
         <h2 class="section-title">Upcoming Hatchings</h2>
         <div class="section-header-links">
-          <a href="#">View Calendar<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-link-chevron.svg"></a>
+          <a href="/events/">View Calendar<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-link-chevron.svg"></a>
         </div>
       </div>
       <div class="row">
-        <a href="#" class="hatching-block">
-          <div class="block-wrapper">
-            <div class="hatching-block-img" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/img/hatching-1.png');"></div>
-            <h1 class="hatching-title">DINNER AT THE DISTILLERY</h1>
-            <span class="hatching-date">March 16 - 20, 2015</span>
-            <span class="hatching-location">Vancouver, BC, Canada</span>
-          </div>
-        </a>
-        <a href="#" class="hatching-block">
-          <div class="block-wrapper">
-            <div class="hatching-block-img" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/img/hatching-2.png');"></div>
-            <h1 class="hatching-title">H|X – HUMAN EXPERIENCE</h1>
-            <span class="hatching-date">June 3 - 4, 2015</span>
-            <span class="hatching-location">Missoula, MT</span>
-          </div>
-        </a>
-        <a href="#" class="hatching-block">
-          <div class="block-wrapper">
-            <div class="hatching-block-img" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/img/hatching-3.png');"></div>
-            <h1 class="hatching-title">BIOMIMICRY: LEARNING FROM NATURE</h1>
-            <span class="hatching-date">August 21 - 24, 2015</span>
-            <span class="hatching-location">Spokane, WA</span>
-          </div>
-        </a>
+        <?php
+        // Ensure the global $post variable is in scope
+        global $post;
+         
+        // Retrieve the next 5 upcoming events
+        $events = tribe_get_events( array(
+            'posts_per_page' => 3,
+            'start_date' => new DateTime()
+        ) );
+
+        // Loop through the events: set up each one as
+        // the current post then use template tags to
+        // display the title and content
+        foreach ( $events as $post ) {
+          setup_postdata( $post );
+      ?>
+      
+      <a href="<?php the_permalink(); ?>" class="hatching-block">
+        <div class="block-wrapper">
+          <div class="hatching-block-img" style="background-image:url('<?php echo hatch_tribe_event_featured_image(); ?>');"></div>
+          <h1 class="hatching-title"><?php the_title(); ?></h1>
+          <span class="hatching-date"><?php echo tribe_get_start_date(); ?></span>
+          <span class="hatching-location">Vancouver, BC, Canada</span>
+        </div>
+      </a>
+
+      <?php } ?>
       </div>
     </section>
 
