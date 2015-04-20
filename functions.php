@@ -247,6 +247,9 @@ function html5blank_conditional_styles()
     } elseif ( is_page('talk-to-us') ) {
         wp_register_style('contact', get_template_directory_uri() . '/assets/css/sections/contact.css', array(), '1.0', 'all');
         wp_enqueue_style('contact'); // Enqueue it!
+    } elseif ( is_page('groundbreakers') ) {
+        wp_register_style('groundbreakers', get_template_directory_uri() . '/assets/css/sections/groundbreakers.css', array(), '1.0', 'all');
+        wp_enqueue_style('groundbreakers'); // Enqueue it!
     } elseif ( is_page() ) {
         wp_register_style('page', get_template_directory_uri() . '/assets/css/sections/page.css', array(), '1.0', 'all');
         wp_enqueue_style('page'); // Enqueue it!

@@ -7,8 +7,21 @@
         <div class="isotope">
   <?php endif; ?>
 
-    
-      <?php query_posts( 'post_count=14' ); ?>
+
+      <?php query_posts( 
+        array(
+          'post_type' => 'post', // if the post type is post 
+          'posts_per_page' => 8,
+          'tax_query' => array(
+          array(
+            'taxonomy' => 'post_format',
+            'field' => 'slug',
+            'terms' => array('post-format-aside', 'post-format-gallery', 'post-format-link', 'post-format-image', 'post-format-quote', 'post-format-status', 'post-format-audio', 'post-format-chat', 'post-format-video'),
+            'operator' => 'NOT IN'
+          ))
+        )
+      ); 
+      ?>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <?php
 

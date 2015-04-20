@@ -91,11 +91,13 @@
       font-size: 16px;
       margin: 0 0 4px;
       font-weight: 600;
+      display: none;
     }
     .post-title {
-      font-size: 24px;
+      font-size: 21px;
       font-family: @font-family-tungsten;
       margin: 0;
+      letter-spacing: .02em;
     }
     &.size2,
     &.size3 {
@@ -108,8 +110,12 @@
         right: 15px;
         bottom: 15px;
       }
+      .post-author {
+        display: block;
+      }
       .post-title {
         font-size: 42px;
+        letter-spacing: 0;
       }
     }
     &.size2 {
