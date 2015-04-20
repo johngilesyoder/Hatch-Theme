@@ -1,22 +1,28 @@
-// groundbreakers.less
+// advisory-board.less
 // -----------------------------------------------------------------
 
 // Page
 @import "page.less";
 
-.groundbreakers-posts {
-  margin-top: 40px;
+.advisory-board-posts {
+  margin-top: 30px;
 }
-.groundbreaker {
-  border-bottom: 1px solid @border-color;
-  margin-bottom: 40px;
-  padding-bottom: 20px;
+
+.board-member {
+  margin-bottom: 30px;
+  background: #f2f2f2;
+  padding: 15px;
   &:last-child {
-    border-bottom: 0;
     margin-bottom: 0;
   }
   img {
     .img-responsive();
+  }
+  .board-member-name {
+    font-size: 18px;
+  }
+  p {
+    margin-bottom: 0;
   }
 }
 
@@ -36,11 +42,29 @@
 
 // Responsive: Landscape phone to desktop/tablet
 // --------------------------------------------------
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+
+  .board-member {
+    img {
+      max-width: 200px;
+    }
+  }
+
+}
 
 // Responsive: Up to landscape phone
 // --------------------------------------------------
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+
+  .board-member {
+    img {
+      width: 100%;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+}
 
 // Responsive: Up to portrait phone
 // --------------------------------------------------
