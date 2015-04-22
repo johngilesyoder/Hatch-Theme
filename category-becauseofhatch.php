@@ -25,7 +25,7 @@
 
       <div class="widget_twitter">
         <h3>#BecauseOfHatch</h3>
-        <a class="twitter-timeline" href="https://twitter.com/johngilesyoder" data-widget-id="560939932639068160">Tweets by @johngilesyoder</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <a class="twitter-timeline" href="https://twitter.com/hashtag/becauseofhatch" data-widget-id="590628620504326144">#becauseofhatch Tweets</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
 
       <footer class="sidebar-footer">
