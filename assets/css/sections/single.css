@@ -7334,7 +7334,7 @@ body {
 .type-tribe_events .post-title {
   margin: 0 0 12px;
   font-size: 32px;
-  line-height: 1.125em;
+  line-height: 1.25em;
   font-weight: 400;
   letter-spacing: -0.02em;
 }
@@ -7471,7 +7471,7 @@ body {
   }
   .post.type-post .post-title {
     font-size: 24px;
-    line-height: 1.125em;
+    line-height: 1.25em;
   }
   .post.type-post .post-title .icon-external-link {
     top: 0;
