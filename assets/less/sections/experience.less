@@ -129,7 +129,10 @@
   .hero-title {
     margin-bottom: 40px;
     text-shadow: 0 1px 20px #000;
-    display: inline-block;
+    display: block;
+    width: 533px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px 15px 30px;
   }
   .hero-logo {
@@ -669,6 +672,7 @@
     .hero-title {
       margin-bottom: 30px;
       padding: 20px 15px 30px;
+      width: 400px;
     }
     .hero-logo {
       font-size: 75px;
@@ -834,4 +838,12 @@
 }
 
 // Up to landscape phone
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+
+  .conference-apply {
+    .hero-title {
+      width: 100%;
+    }
+  }
+
+}

@@ -7139,6 +7139,9 @@ main {
     left: 25%;
   }
 }
+.page-content iframe {
+  width: 100%;
+}
 .page-content.page-full {
   border-left: 0;
   position: relative;
@@ -7302,6 +7305,7 @@ form input[type="text"],
 form input[type="tel"],
 form input[type="email"] {
   height: 40px;
+  width: 100%;
 }
 form .btn-primary {
   height: 50px;

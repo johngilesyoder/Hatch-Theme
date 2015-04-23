@@ -18,9 +18,8 @@
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<?php the_content(); ?>
 						
-						<div class="groundbreakers-posts">
-						
-							<?php	query_posts( 'post_type=groundbreaker' ); ?>
+						<div class="alumni-posts">
+							<?php	query_posts( 'post_type=alumnus' ); ?>
 							<?php 
 								// featured image
 								$thumb_id = get_post_thumbnail_id();
@@ -29,10 +28,10 @@
 							?>
 
 							<?php while ( have_posts() ) : the_post(); ?>
-								<div class="groundbreaker">
+								<div class="alumnus">
 									<?php the_post_thumbnail(); ?>
-							    <h3 class="groundbreaker-name"><?php the_title(); ?></h3>
-							    <p class="groundbreaker-claim-to-fame"><strong><?php echo get_post_meta( get_the_ID(), 'wpcf-claim-to-fame', true ); ?></strong></p>
+							    <h3 class="alumnus-name"><?php the_title(); ?></h3>
+							    <p class="alumnus-known-for"><strong><?php echo get_post_meta( get_the_ID(), 'wpcf-known-for', true ); ?></strong></p>
 							    <?php the_content(); ?>
 							  </div>
 							<?php endwhile; ?>

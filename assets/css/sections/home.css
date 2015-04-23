@@ -7601,12 +7601,15 @@ http://flickity.metafizzy.co
   margin: 0 0 4px;
   font-weight: 600;
   display: none;
+  color: #ffb100;
 }
 .posts-hero .item .post-title {
-  font-size: 21px;
-  font-family: 'Tungsten A', 'Tungsten B';
+  font-size: 16px;
+  font-family: 'Gotham Rounded SSm A', 'Gotham Rounded SSm B', "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.25em;
+  font-weight: 400;
   margin: 0;
-  letter-spacing: .02em;
+  letter-spacing: -0.02em;
 }
 .posts-hero .item.size2,
 .posts-hero .item.size3 {
@@ -7631,8 +7634,8 @@ http://flickity.metafizzy.co
 }
 .posts-hero .item.size2 .post-title,
 .posts-hero .item.size3 .post-title {
-  font-size: 42px;
-  letter-spacing: 0;
+  font-size: 30px;
+  line-height: 1.125em;
 }
 .posts-hero .item.size2 {
   height: 318px;
@@ -7772,7 +7775,6 @@ http://flickity.metafizzy.co
   left: 0;
   right: 0;
   margin: 0;
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
   /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.8)));
   /* Chrome,Safari4+ */
@@ -7782,7 +7784,7 @@ http://flickity.metafizzy.co
   /* IE10+ */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.8) 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#0000000', GradientType=0);
   /* IE6-8 */
 }
 .section-mentorship .mentorship-block .block-wrapper .mentorship-block-img span {
@@ -8011,18 +8013,17 @@ http://flickity.metafizzy.co
     color: #fff;
   }
   .posts-hero .mobile-carousel .gallery-cell article hgroup .post-title {
-    font-size: 40px;
+    font-size: 24px;
+    line-height: 1.125em;
+    font-weight: 400;
   }
   .posts-hero .mobile-carousel .gallery-cell article .post-author {
     font-family: 'Archer SSm A', 'Archer SSm B';
     font-style: italic;
     font-size: 16px;
     margin: 0 0 4px;
-    font-weight: 600;
   }
   .posts-hero .mobile-carousel .gallery-cell article .post-title {
-    font-size: 24px;
-    font-family: 'Tungsten A', 'Tungsten B';
     margin: 0;
   }
   .section-block {

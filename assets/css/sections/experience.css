@@ -7419,7 +7419,10 @@ fieldset[disabled] .btn-secondary.active {
 .conference-apply .hero-title {
   margin-bottom: 40px;
   text-shadow: 0 1px 20px #000;
-  display: inline-block;
+  display: block;
+  width: 533px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 20px 15px 30px;
 }
 .conference-apply .hero-logo {
@@ -7918,6 +7921,7 @@ fieldset[disabled] .btn-secondary.active {
   .conference-apply .hero-title {
     margin-bottom: 30px;
     padding: 20px 15px 30px;
+    width: 400px;
   }
   .conference-apply .hero-logo {
     font-size: 75px;
@@ -8055,6 +8059,11 @@ fieldset[disabled] .btn-secondary.active {
   .section-bottom .section-partners .section-header a {
     margin-left: 0;
     display: block;
+  }
+}
+@media (max-width: 480px) {
+  .conference-apply .hero-title {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=experience.css.map */

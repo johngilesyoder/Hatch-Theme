@@ -7378,6 +7378,10 @@ body {
   font-size: 16px;
   line-height: 24px;
 }
+.post.type-post .post-content iframe,
+.type-tribe_events .post-content iframe {
+  width: 100%;
+}
 .post.type-post .btn-continue,
 .type-tribe_events .btn-continue {
   color: #007da3;
