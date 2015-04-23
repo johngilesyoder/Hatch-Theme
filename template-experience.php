@@ -70,11 +70,14 @@
 							<p>Entrepreneur returns to her community, founds an entrepreneurial mentorship incubator.</p>
   			    </div>
   			    <div class="item">
-  			      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio.</p>
+  			      <p>Young musician meets Grammy-winning producer, who produces her next album.</p>
   			    </div>
   			    <div class="item">
-  			      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.</p>
+  			      <p>CEO of non-profit finds three new board members.</p>
   			    </div>
+            <div class="item">
+              <p>Educator meets writer, now subject of a new book on disrupting the future of learning.</p>
+            </div>
   			  </div>
   			</div>
   		</div>
