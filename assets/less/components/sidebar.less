@@ -95,6 +95,14 @@
         }
       }
     }
+    .btn-view-more-categories {
+      margin-top: 8px;
+      display: inline-block;
+      padding: 0;
+      &:focus {
+        outline: 0;
+      }
+    }
   }
   .sidebar-footer {
     text-align: center;
@@ -143,6 +151,36 @@
       font-size: 12px;
       line-height: 1.4em;
       padding: 0 15px;
+    }
+  }
+}
+
+#categoriesModal {
+  .modal-header {
+    border: 0;
+    padding-bottom: 0;
+  }
+  li {
+    display: inline-block;
+    margin-bottom: 8px;
+    list-style-type: none;
+    a {
+      font-size: 13px;
+      text-transform: lowercase;
+      font-weight: 500;
+      border: 1px solid @link-color;
+      height: 24px;
+      line-height: 24px;
+      border-radius: 12px;
+      display: inline-block;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-decoration: none;
+      &:hover {
+        background: @link-color;
+        color: #fff;
+        border-color: @link-color;
+      }
     }
   }
 }

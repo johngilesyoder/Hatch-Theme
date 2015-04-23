@@ -5651,7 +5651,7 @@ button.close {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1040;
+  z-index: 1540;
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
@@ -7601,6 +7601,14 @@ body {
   color: #fff;
   border-color: #007da3;
 }
+.blog-sidebar .widget_categories .btn-view-more-categories {
+  margin-top: 8px;
+  display: inline-block;
+  padding: 0;
+}
+.blog-sidebar .widget_categories .btn-view-more-categories:focus {
+  outline: 0;
+}
 .blog-sidebar .sidebar-footer {
   text-align: center;
   position: absolute;
@@ -7649,6 +7657,33 @@ body {
   font-size: 12px;
   line-height: 1.4em;
   padding: 0 15px;
+}
+#categoriesModal .modal-header {
+  border: 0;
+  padding-bottom: 0;
+}
+#categoriesModal li {
+  display: inline-block;
+  margin-bottom: 8px;
+  list-style-type: none;
+}
+#categoriesModal li a {
+  font-size: 13px;
+  text-transform: lowercase;
+  font-weight: 500;
+  border: 1px solid #007da3;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 12px;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+}
+#categoriesModal li a:hover {
+  background: #007da3;
+  color: #fff;
+  border-color: #007da3;
 }
 @media (min-height: 700px) {
   .sidebar-becauseofhatch .blog-sidebar .widget_text,

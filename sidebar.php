@@ -5,14 +5,12 @@
 <div class="widget_categories">
   <h3>Categories</h3>
   <ul>
-  	<?php $tags = get_tags();
-    if ($tags) {
-    foreach ($tags as $tag) {
-    echo '<li><a href="' . get_tag_link( $tag->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $tag->name ) . '" ' . '>' . $tag->name.'</a></li> ';
-    }
-    }
-    ?>
+  	<?php wp_list_categories('number=8&title_li=&orderby=count&order=DESC&taxonomy=post_tag'); ?>
   </ul>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-link btn-view-more-categories" data-toggle="modal" data-target="#categoriesModal">
+    View more ...
+  </button>
 </div>
 
 <footer class="sidebar-footer">

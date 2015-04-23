@@ -1,4 +1,18 @@
 <?php get_header(); ?>
+<!-- Modal -->
+<div class="modal fade" id="categoriesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Categories</h4>
+      </div>
+      <div class="modal-body">
+        <?php wp_list_categories('title_li=&orderby=count&order=DESC&taxonomy=post_tag'); ?>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="container container-blog">
   <div class="blog-roll-wrapper">
