@@ -7332,12 +7332,11 @@ body {
 }
 .post.type-post .post-title,
 .type-tribe_events .post-title {
-  margin: 0 0 3px;
-  font-family: 'Tungsten A', 'Tungsten B';
-  font-size: 42px;
+  margin: 0 0 12px;
+  font-size: 32px;
   line-height: 1.125em;
-  text-transform: uppercase;
-  letter-spacing: .01em;
+  font-weight: 400;
+  letter-spacing: -0.02em;
 }
 .post.type-post .post-title a,
 .type-tribe_events .post-title a {
@@ -7346,8 +7345,6 @@ body {
 .post.type-post .post-title .icon-external-link,
 .type-tribe_events .post-title .icon-external-link {
   margin-left: 10px;
-  top: 2px;
-  position: relative;
 }
 .post.type-post .post-meta,
 .type-tribe_events .post-meta {
@@ -7430,7 +7427,7 @@ body {
     padding-bottom: 30px;
   }
   .post.type-post .post-title {
-    font-size: 32px;
+    font-size: 28px;
   }
   .post.type-post .post-title .icon-external-link {
     top: 0;
@@ -7473,8 +7470,8 @@ body {
     padding-bottom: 30px;
   }
   .post.type-post .post-title {
-    font-size: 42px;
-    line-height: 1em;
+    font-size: 24px;
+    line-height: 1.125em;
   }
   .post.type-post .post-title .icon-external-link {
     top: 0;
