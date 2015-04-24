@@ -250,6 +250,9 @@ function html5blank_conditional_styles()
     } elseif ( is_page('groundbreakers') ) {
         wp_register_style('groundbreakers', get_template_directory_uri() . '/assets/css/sections/groundbreakers.css', array(), '1.0', 'all');
         wp_enqueue_style('groundbreakers'); // Enqueue it!
+    } elseif ( is_page('our-partners') ) {
+        wp_register_style('our-partners', get_template_directory_uri() . '/assets/css/sections/our-partners.css', array(), '1.0', 'all');
+        wp_enqueue_style('our-partners'); // Enqueue it!
     } elseif ( is_page('hatch-alumni') ) {
         wp_register_style('hatch-alumni', get_template_directory_uri() . '/assets/css/sections/hatch-alumni.css', array(), '1.0', 'all');
         wp_enqueue_style('hatch-alumni'); // Enqueue it!
