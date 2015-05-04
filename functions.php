@@ -177,7 +177,7 @@ function html5blank_header_scripts()
 {
     if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
 
-      wp_register_script('conditionizr', get_template_directory_uri() . '/assets/js/lib/conditionizr-4.3.0.min.js', array(), '4.3.0'); // Conditionizr
+        wp_register_script('conditionizr', get_template_directory_uri() . '/assets/js/lib/conditionizr-4.3.0.min.js', array(), '4.3.0'); // Conditionizr
         wp_enqueue_script('conditionizr'); // Enqueue it!
 
         wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
@@ -189,8 +189,6 @@ function html5blank_header_scripts()
         wp_register_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js', array(), null, false );
         wp_enqueue_script('bootstrap'); // Enqueue it!
 
-        wp_register_script('scotchpanel', get_template_directory_uri() . '/assets/js/lib/scotchPanels.js', array(), '1.0.0'); // Off Canvas Menu
-        wp_enqueue_script('scotchpanel'); // Enqueue it!
     }
 }
 
@@ -244,7 +242,7 @@ function html5blank_conditional_styles()
     } elseif ( is_page( 'the-experience') ) {
         wp_register_style('experience', get_template_directory_uri() . '/assets/css/sections/experience.css', array(), '1.0', 'all');
         wp_enqueue_style('experience'); // Enqueue it!
-    } elseif ( is_page('talk-to-us') ) {
+    } elseif ( is_page('contact') ) {
         wp_register_style('contact', get_template_directory_uri() . '/assets/css/sections/contact.css', array(), '1.0', 'all');
         wp_enqueue_style('contact'); // Enqueue it!
     } elseif ( is_page('groundbreakers') ) {
@@ -506,7 +504,7 @@ function html5blankcomments($comment, $args, $depth)
 
 // Add Actions
 add_action('init', 'html5blank_header_scripts'); // Add Custom Scripts to wp_head
-add_action('init', 'hatch_localize_script'); // Localize script for the AJAX url
+//add_action('init', 'hatch_localize_script'); // Localize script for the AJAX url
 add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditional Page Scripts
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
@@ -542,7 +540,7 @@ add_filter('wp_nav_menu_args', 'my_wp_nav_menu_args'); // Remove surrounding <di
 add_filter('the_category', 'remove_category_rel_from_category_list'); // Remove invalid rel attribute
 add_filter('the_excerpt', 'shortcode_unautop'); // Remove auto <p> tags in Excerpt (Manual Excerpts only)
 add_filter('the_excerpt', 'do_shortcode'); // Allows Shortcodes to be executed in Excerpt (Manual Excerpts only)
-add_filter('excerpt_more', 'html5_blank_view_article'); // Add 'View Article' button instead of [...] for Excerpts
+//add_filter('excerpt_more', 'html5_blank_view_article'); // Add 'View Article' button instead of [...] for Excerpts
 add_filter('show_admin_bar', 'remove_admin_bar'); // Remove Admin bar
 add_filter('style_loader_tag', 'html5_style_remove'); // Remove 'text/css' from enqueued stylesheet
 add_filter('post_thumbnail_html', 'remove_thumbnail_dimensions', 10); // Remove width and height dynamic attributes to thumbnails

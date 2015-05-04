@@ -9,12 +9,12 @@
     <!-- Conference -->
   	<section class="section-block section-conference">
       <div class="section-header">
-        <h2 class="section-title">HATCH 12 (2015)</h2>
+        <h2 class="section-title">HATCH 15</h2>
       </div>
       <div class="row">
         <div class="conference-photo"> 
           <div class="conference-photo-wrapper">
-            <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/conference-photo.png">
+            <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/conference-photo.jpg">
             <span class="conference-photo-title">OFF THE GRID // ON THE GRID</span>
           </div>
         </div>
@@ -75,8 +75,7 @@
          
         // Retrieve the next 5 upcoming events
         $events = tribe_get_events( array(
-            'posts_per_page' => 3,
-            'start_date' => new DateTime()
+            'posts_per_page' => 3
         ) );
 
         // Loop through the events: set up each one as
@@ -91,7 +90,7 @@
           <div class="hatching-block-img" style="background-image:url('<?php echo hatch_tribe_event_featured_image(); ?>');"></div>
           <h1 class="hatching-title"><?php the_title(); ?></h1>
           <span class="hatching-date"><?php echo tribe_get_start_date(); ?></span>
-          <span class="hatching-location">Vancouver, BC, Canada</span>
+          <span class="hatching-location"><?php echo tribe_get_city(); ?>, <?php echo tribe_get_stateprovince(); ?></span>
         </div>
       </a>
 

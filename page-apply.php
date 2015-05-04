@@ -47,7 +47,7 @@
 							<hr>
 							<div class="row">
 								<div class="col-md-6 col-md-offset-3">
-									<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 9 ); } ?>
+									<?php gravity_form(3, false, false, false, '', true); ?>
 								</div>
 							</div>
 

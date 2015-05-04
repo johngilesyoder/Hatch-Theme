@@ -4,7 +4,7 @@
   	<div class="hero-content-wrapper">
   		<div class="conference-apply">
 	  		<div class="hero-title">
-		  		<h1 class="hatch-logo hero-logo">HATCH<sup>12</sup></h1>
+		  		<h1 class="hatch-logo hero-logo">HATCH<sup>15</sup></h1>
 		  		<span class="hero-date-location">Sep 16-20, 2015 &nbsp;//&nbsp; Bozeman, Montana</span>
 		  	</div>
 		  	<div>
@@ -53,7 +53,7 @@
   			<div class="why-block">
   				<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/experience/why-block-1.jpg">
   				<h3>Reversing the Creativity Crisis</h3>
-  				<p>Creativity is the magic ingredient in building a bright future. HATCH is driven to infuse every member of the HATCH community by: uniting disruptors and mavericks, cross-pollinating diverse people and ideas, and creating experiences that activate the creator inside each and every person. &nbsp;<a href="#">Learn more about the Creativity Crisis</a></p>
+  				<p>Creativity is the magic ingredient in building a bright future. HATCH is driven to infuse every member of the HATCH community by: uniting disruptors and mavericks, cross-pollinating diverse people and ideas, and creating experiences that activate the creator inside each and every person. &nbsp;<a href="/about/reversing-the-creativity-crisis">Learn more about the Creativity Crisis</a></p>
   			</div>
   			<div class="why-block">
   				<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/experience/why-block-2.jpg">
@@ -154,7 +154,7 @@
   	<div class="container">
   		<div class="conference-apply">
 	  		<div class="hero-title">
-		  		<h1 class="hatch-logo hero-logo">HATCH<sup>12</sup></h1>
+		  		<h1 class="hatch-logo hero-logo">HATCH<sup>15</sup></h1>
 		  		<span class="hero-date-location">Sep 16-20, 2015 &nbsp;//&nbsp; Bozeman, Montana</span>
 		  	</div>
 		  	<div>

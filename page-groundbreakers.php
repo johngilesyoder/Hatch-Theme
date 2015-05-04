@@ -20,7 +20,7 @@
 						
 						<div class="groundbreakers-posts">
 						
-							<?php	query_posts( 'post_type=groundbreaker' ); ?>
+							<?php	query_posts( 'post_type=groundbreaker&posts_per_page=-1&orderby=date&order=ASC' ); ?>
 							<?php 
 								// featured image
 								$thumb_id = get_post_thumbnail_id();

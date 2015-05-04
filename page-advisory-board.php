@@ -20,7 +20,7 @@
 						
 						<div class="advisory-board-posts">
 							
-							<?php	query_posts( 'post_type=board-member' ); ?>
+							<?php	query_posts( 'post_type=board-member&posts_per_page=-1' ); ?>
 							<?php 
 								// featured image
 								$thumb_id = get_post_thumbnail_id();
