@@ -5,7 +5,7 @@
 <div class="widget_categories">
   <h3>Categories</h3>
   <ul>
-  	<?php wp_list_categories('number=8&title_li=&orderby=count&order=DESC&taxonomy=post_tag'); ?>
+  	<?php wp_list_categories('number=6&title_li=&orderby=count&order=DESC&taxonomy=post_tag'); ?>
   </ul>
   <!-- Button trigger modal -->
   <button type="button" class="btn btn-link btn-view-more-categories" data-toggle="modal" data-target="#categoriesModal">

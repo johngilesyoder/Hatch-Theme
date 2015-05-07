@@ -40,7 +40,7 @@
           <div class="inquiry-contact">
             <div class="inquiry-wrapper">
               <h2>Contact Us</h2>
-              <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 6 ); } ?>
+              <?php gravity_form(7, false, false, false, '', true); ?>
             </div>
           </div>
         </div>

@@ -41,8 +41,21 @@
     font-size: 14px !important;
     padding: 6px 12px !important;
   }
+  .gfield_radio,
+  .gfield_checkbox {
+    li {
+      padding-left: 10px !important;
+    }
+    label {
+      font-weight: normal;
+    }
+  }
   textarea {
     .form-control();
+    padding: 6px 12px !important;
+  }
+  &.gf_browser_chrome ul.gform_fields li.gfield input[type=radio] {
+    margin-left: .1em !important;
   }
   .gfield {
     .form-group();
