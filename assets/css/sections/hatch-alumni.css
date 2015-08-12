@@ -266,8 +266,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../../fonts/glyphicons-halflings-regular.eot');
+  src: url('../../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -6626,6 +6626,31 @@ fieldset[disabled] .btn-secondary.active {
   font-weight: 700;
   border: 0;
 }
+.topbar .btn-filmfreeway {
+  margin-top: 5px;
+  margin-right: 5px;
+  float: right;
+  height: 25px;
+  padding: 0 15px;
+  line-height: 25px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 0;
+  background-color: #18A2CC;
+}
+.topbar .btn-filmfreeway img {
+  position: relative;
+  top: -2px;
+  margin-left: 3px;
+}
+.topbar .btn-filmfreeway:hover {
+  background-color: #1796BD;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .topbar p span {
+    display: none;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .topbar {
     display: none;
@@ -6662,7 +6687,8 @@ fieldset[disabled] .btn-secondary.active {
 .site-header .navbar-collapse {
   padding-top: 30px;
 }
-.site-header .navbar-collapse .nav > li:nth-child(6) > a {
+.site-header .navbar-collapse .nav > li:nth-child(6) > a,
+.site-header .navbar-collapse .nav > li:nth-child(1) > a {
   text-transform: none;
 }
 .site-header .navbar-collapse .nav > li.dropdown a {
@@ -7629,4 +7655,3 @@ article iframe {
   height: auto;
   width: 350px;
 }
-/*# sourceMappingURL=hatch-alumni.css.map */

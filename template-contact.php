@@ -25,7 +25,7 @@
                 627 E Peach St.<br>
                 Bozeman, MT 59715
               </address>
-              <span class="contact-phone">(406) 209-9809</span>
+              <!--<span class="contact-phone">(406) 209-9809</span>-->
               <a class="contact-email-address" href="mailto:hatchinfo@hatchexperience.org">hatchinfo@hatchexperience.org</a>
             </div>
             <div class="connect">

@@ -20,6 +20,26 @@
     font-weight: 700;
     border: 0;
   }
+  .btn-filmfreeway {
+    margin-top: 5px;
+    margin-right: 5px;
+    float: right;
+    height: 25px;
+    padding: 0 15px;
+    line-height: 25px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 0;
+    background-color: #18A2CC;
+    img {
+      position: relative;
+      top: -2px;
+      margin-left: 3px;
+    }
+    &:hover {
+      background-color: #1796BD;
+    }
+  }
 }
 
 .topbar-apply {
@@ -35,7 +55,17 @@
 @media (min-width: 1200px) {}
 
 // Desktop to large desktop
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .topbar {
+    p {
+      span {
+        display: none;
+      }
+    }
+  }
+
+}
 
 // Tablet to desktop
 @media (min-width: 768px) and (max-width: 991px) {

@@ -242,6 +242,12 @@ function html5blank_conditional_styles()
     } elseif ( is_page( 'the-experience') ) {
         wp_register_style('experience', get_template_directory_uri() . '/assets/css/sections/experience.css', array(), '1.0', 'all');
         wp_enqueue_style('experience'); // Enqueue it!
+    } elseif ( is_page( 'hatch-2015-registration') ) {
+        wp_register_style('registration', get_template_directory_uri() . '/assets/css/sections/registration.css', array(), '1.0', 'all');
+        wp_enqueue_style('registration'); // Enqueue it!
+    } elseif ( is_page( 'registration-success') ) {
+        wp_register_style('registration', get_template_directory_uri() . '/assets/css/sections/registration.css', array(), '1.0', 'all');
+        wp_enqueue_style('registration'); // Enqueue it!
     } elseif ( is_page('contact') ) {
         wp_register_style('contact', get_template_directory_uri() . '/assets/css/sections/contact.css', array(), '1.0', 'all');
         wp_enqueue_style('contact'); // Enqueue it!
