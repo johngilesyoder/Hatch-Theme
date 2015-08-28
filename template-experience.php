@@ -5,7 +5,7 @@
   		<div class="conference-apply">
 	  		<div class="hero-title">
 		  		<h1 class="hatch-logo hero-logo">HATCH<sup>15</sup></h1>
-		  		<span class="hero-date-location">Sep 16-20, 2015 &nbsp;//&nbsp; Bozeman, Montana</span>
+		  		<span class="hero-date-location">Sep 16-20, 2015 &nbsp;//&nbsp; Big Sky, Montana</span>
 		  	</div>
 		  	<div>
 	  			<a href="/apply" class="btn btn-apply">Invite Only – <strong>Apply Now</strong></a>
@@ -117,12 +117,12 @@
   			</div>
   		</div>
   		<div class="testimonial">
-  			<img class="testimonial-photo" src="<?php echo get_template_directory_uri(); ?>/assets/img/experience/testimonial-hoffer.png">
+  			<img class="testimonial-photo" src="<?php echo get_template_directory_uri(); ?>/assets/img/experience/testimonial-lighter.jpg">
   			<div class="quote-block">
   				<div class="quote-statement">
-  					<p>“What became instantly clear at HATCH is that the state of my health, our community’s health, and the world's health, are all directly proportional to the degree to which creativity is truly empowered in the world. Creativity is the catalyst that will solve worlds toughest problems. It’s the engine that drives advancement in the sciences. It gives our life meaning. Its a common thread in our humanity, and it seeds the answers to tomorrows prayers. And thats why anything that can empower that faculty in us in such a powerful way is a game changer. And thats why I'm thankful I was invited to - and impacted by Hatch. But I also plan to remember, Hatch is not a noun. Hatch is a verb.”</p>
+  					<p>“Quite simply, HATCH makes us more dangerous.  The companies that send their best and brightest to HATCH dramatically benefit from them returning refueled, re-energized, on the forefront of what’s next, and full of new collaboration opportunities.  HATCH makes us more valuable to our work, ourselves, and the world.”</p>
   				</div>
-  				<cite>&mdash;&nbsp; <span class="cite-person">Deej Hoffer</span> <span class="cite-organization">MUSIC PRODUCER, COMPOSER</span></cite>
+  				<cite>&mdash;&nbsp; <span class="cite-person">Jeff Lighter</span> <span class="cite-organization">FOUNDER, INSIGHT LABS / GREENHOUSE</span></cite>
   			</div>
   		</div>
   	</div>
@@ -132,7 +132,7 @@
   	<div class="container">
   		<h2 class="section-title">In the mountains of <span class="hatch-logo">Montana</span>.</h2>
   		<div class="where-summary">
-  			<p><strong>BOZEMAN, MT</strong> — Consistently named one of the best towns in America by publications such as Outdoor Magazine, Business Week, USA Today, New York Times, Forbes, and more. Bozeman is an epicenter of creativity and innovation, and home to Montana State University. The area is a destination for some of the world’s most coveted fly-fishing, and was the central location for “A River Runs Through It.” Southwest Montana is a cultural and scenic oasis, and is only an hour outside of the stunning Yellowstone Park. Within the last decade, Montana has also become a place where innovators like Bill Gates, Justin Timberlake, Peter Chernin, and Larry Ellison converge to re-calibrate on how they are impacting the world.</p>
+  			<p><strong>Big Sky, MT</strong> — Consistently named one of the best towns in America by publications such as Outdoor Magazine, Business Week, USA Today, New York Times, Forbes, and more. Big Sky is an epicenter of creativity and innovation, and home to Montana State University. The area is a destination for some of the world’s most coveted fly-fishing, and was the central location for “A River Runs Through It.” Southwest Montana is a cultural and scenic oasis, and is only an hour outside of the stunning Yellowstone Park. Within the last decade, Montana has also become a place where innovators like Bill Gates, Justin Timberlake, Peter Chernin, and Larry Ellison converge to re-calibrate on how they are impacting the world.</p>
   		</div>
   		<aside class="section-aside off-the-grid">
   			<div class="row">
@@ -155,7 +155,7 @@
   		<div class="conference-apply">
 	  		<div class="hero-title">
 		  		<h1 class="hatch-logo hero-logo">HATCH<sup>15</sup></h1>
-		  		<span class="hero-date-location">Sep 16-20, 2015 &nbsp;//&nbsp; Bozeman, Montana</span>
+		  		<span class="hero-date-location">Sep 16-20, 2015 &nbsp;//&nbsp; Big Sky, Montana</span>
 		  	</div>
 		  	<div>
 	  			<a href="/apply" class="btn btn-apply">Invite Only – <strong>Apply Now</strong></a>
